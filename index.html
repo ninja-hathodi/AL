@@ -1,0 +1,4524 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, name=" viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Animated Border Menus | Demo 1</title>
+	<meta name="description" content="Responsive Animated Border Menus with CSS Transitions" />
+	<meta name="keywords" content="navigation, menu, responsive, border, overlay, css transition" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" />
+	<script src="js/modernizr.custom.js"></script>
+
+
+	<!--  Fonts and icons  -->
+
+</head>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: whitetheam – 1;
+		--web-view-id: whitetheam__1;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+
+	:root {
+		--web-view-ids: whitetheam__1;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+
+	a {
+		font-style: inherit;
+		color: rgb(233, 231, 231);
+	}
+
+	a:hover {
+		color: aqua
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	#whitetheam__1 {
+		position: absolute;
+		width: 1920px;
+		height: 4321px;
+		background-color: rgba(255, 255, 255, 0.98);
+		overflow: hidden;
+		--web-view-name: whitetheam – 1;
+		--web-view-id: whitetheam__1;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+
+	#Path_50 {
+		fill: rgba(48, 55, 255, 1);
+	}
+
+	.Path_50 {
+		overflow: visible;
+		position: absolute;
+		width: 1920px;
+		height: 750.74px;
+		left: -2px;
+		top: 3453.537px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Polygon_2 {
+		fill: rgba(48, 55, 255, 0.902);
+	}
+
+	.Polygon_2 {
+		overflow: visible;
+		position: absolute;
+		width: 1311px;
+		height: 659px;
+		transform: matrix(1, 0, 0, 1, 1032.7101, 579.2416) rotate(135deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Polygon_5 {
+		fill: rgba(48, 55, 255, 1);
+	}
+
+	.Polygon_5 {
+		overflow: visible;
+		position: absolute;
+		width: 1390px;
+		height: 704px;
+		transform: matrix(1, 0, 0, 1, -452.0113, 2576.0259) rotate(-45deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Polygon_4 {
+		fill: rgba(48, 55, 255, 1);
+	}
+
+	.Polygon_4 {
+		overflow: visible;
+		position: absolute;
+		width: 1403px;
+		height: 698px;
+		transform: matrix(1, 0, 0, 1, -465.2288, 1811.5007) rotate(-45deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Polygon_3 {
+		fill: rgba(48, 55, 255, 1);
+	}
+
+	.Polygon_3 {
+		overflow: visible;
+		position: absolute;
+		width: 1403px;
+		height: 701px;
+		transform: matrix(1, 0, 0, 1, -454.2479, 1032.9817) rotate(-45deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_117 {
+		fill: rgba(48, 55, 255, 0.902);
+	}
+
+	.Path_117 {
+		overflow: visible;
+		position: absolute;
+		width: 1645.63px;
+		height: 849.174px;
+		transform: matrix(1, 0, 0, 1, -550.1105, -108.9706) rotate(-45deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#SUPER_USER {
+		opacity: 0.56;
+		left: 464px;
+		top: 351px;
+		position: absolute;
+		overflow: visible;
+		width: 225px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.369);
+	}
+
+	#ATTENDANCE {
+		left: 83px;
+		top: 452px;
+		position: absolute;
+		overflow: visible;
+		width: 370px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 56px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#and_much_more {
+		left: 88px;
+		top: 515px;
+		position: absolute;
+		overflow: visible;
+		width: 222px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#ID001 {
+		left: 319px;
+		top: 522px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		color: rgba(0, 74, 246, 1);
+	}
+
+	#August__2021 {
+		opacity: 0.6;
+		left: 244px;
+		top: 1056px;
+		position: absolute;
+		overflow: visible;
+		width: 218px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(7, 6, 6, 1);
+	}
+
+	#Laxmikant_varkal_ {
+		filter: blur(4px);
+		left: 726px;
+		top: 560px;
+		position: absolute;
+		overflow: visible;
+		width: 292px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(183, 183, 183, 1);
+	}
+
+	#Rectangle_6 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_6 {
+		filter: drop-shadow(4px 3px 6px rgba(0, 0, 0, 0.769));
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		height: 586px;
+		left: 730px;
+		top: 316px;
+	}
+
+	#Rectangle_7 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(222, 222, 222, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 235px;
+		height: 46px;
+		left: 757px;
+		top: 353px;
+	}
+
+	#Icon_awesome-search {
+		fill: rgba(120, 109, 109, 1);
+	}
+
+	.Icon_awesome-search {
+		overflow: visible;
+		position: absolute;
+		width: 20.7px;
+		height: 19.922px;
+		left: 767.188px;
+		top: 368.08px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#search_student {
+		left: 803px;
+		top: 371px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(165, 163, 163, 1);
+	}
+
+	#Rectangle_8 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_8 {
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		height: 84px;
+		left: 758px;
+		top: 417px;
+	}
+
+	#Rectangle_9 {
+		fill: rgba(62, 229, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_9 {
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		height: 58px;
+		left: 775px;
+		top: 429px;
+	}
+
+	#name__Laxmikant_varkal_roll_nu {
+		left: 849px;
+		top: 432px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#Icon_awesome-user-alt {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-alt {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		left: 785.26px;
+		top: 439.845px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_10 {
+		fill: rgba(255, 252, 252, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		height: 84px;
+		left: 758px;
+		top: 511px;
+	}
+
+	#Rectangle_11 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		height: 84px;
+		left: 757px;
+		top: 608px;
+	}
+
+	#Rectangle_12 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_12 {
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		height: 84px;
+		left: 757px;
+		top: 708px;
+	}
+
+	#name__Laxmikant_varkal_roll_nu_ {
+		left: 849px;
+		top: 522px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#name__Laxmikant_varkal_roll_nu_ba {
+		left: 849px;
+		top: 624px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#name__Laxmikant_varkal_roll_nu_bb {
+		left: 849px;
+		top: 720px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#Rectangle_13 {
+		fill: rgba(62, 229, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		height: 58px;
+		left: 774px;
+		top: 519px;
+	}
+
+	#Rectangle_14 {
+		fill: rgba(62, 229, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		height: 58px;
+		left: 774px;
+		top: 623px;
+	}
+
+	#Rectangle_15 {
+		fill: rgba(62, 229, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		height: 58px;
+		left: 774px;
+		top: 717px;
+	}
+
+	#Icon_awesome-user-alt_bf {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-alt_bf {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		left: 785.26px;
+		top: 530.259px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user-alt_bg {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-alt_bg {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		left: 785.26px;
+		top: 633.448px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user-alt_bh {
+		fill: rgba(252, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-alt_bh {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		left: 785.26px;
+		top: 727.793px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user-alt_d {
+		fill: rgba(24, 236, 243, 1);
+	}
+
+	.Icon_awesome-user-alt_d {
+		overflow: visible;
+		position: absolute;
+		width: 23.441px;
+		height: 24.162px;
+		left: 764.159px;
+		top: 824.214px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_metro-home_d {
+		fill: rgba(128, 119, 119, 1);
+	}
+
+	.Icon_metro-home_d {
+		overflow: visible;
+		position: absolute;
+		width: 23.788px;
+		height: 24.187px;
+		left: 860.508px;
+		top: 824.214px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_ionic-md-settings {
+		fill: rgba(128, 119, 119, 1);
+	}
+
+	.Icon_ionic-md-settings {
+		overflow: visible;
+		position: absolute;
+		width: 24.324px;
+		height: 24.162px;
+		left: 956.895px;
+		top: 825.214px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_16 {
+		fill: rgba(86, 243, 255, 1);
+	}
+
+	.Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 5px;
+		left: 757px;
+		top: 854px;
+	}
+
+	#Rectangle_17 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_17 {
+		filter: drop-shadow(4px 3px 6px rgba(114, 56, 56, 0.98));
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		height: 586px;
+		left: 1115px;
+		top: 312px;
+	}
+
+	#NORMAL_USER {
+		opacity: 0.31;
+		left: 1667px;
+		top: 736px;
+		position: absolute;
+		overflow: visible;
+		width: 320px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.38);
+	}
+
+	#Path_53 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_53 {
+		filter: drop-shadow(4px 3px 6px rgba(43, 15, 15, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 303px;
+		height: 586px;
+		left: 1485px;
+		top: 316px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_21 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 228px;
+		height: 86px;
+		left: 1144px;
+		top: 338px;
+	}
+
+	#ROLL_NO {
+		left: 1176px;
+		top: 377px;
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(172, 172, 172, 1);
+	}
+
+	#ID33 {
+		left: 1285px;
+		top: 348px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 57px;
+		color: rgba(172, 172, 172, 1);
+	}
+
+	#Rectangle_22 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_22 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1151px;
+		top: 588px;
+	}
+
+	#Icon_awesome-user {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1162.711px;
+		top: 593.674px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_23 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_23 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1209px;
+		top: 588px;
+	}
+
+	#Rectangle_24 {
+		fill: rgba(38, 245, 245, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_24 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1266px;
+		top: 588px;
+	}
+
+	#Rectangle_25 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_25 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1320px;
+		top: 585px;
+	}
+
+	#Rectangle_26 {
+		fill: rgba(38, 245, 245, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_26 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1151px;
+		top: 641px;
+	}
+
+	#Rectangle_27 {
+		filter: blur(0px);
+		fill: rgba(38, 245, 245, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_27 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1209px;
+		top: 639px;
+	}
+
+	#Rectangle_28 {
+		fill: rgba(38, 245, 245, 1);
+	}
+
+	.Rectangle_28 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1267px;
+		top: 639px;
+	}
+
+	#Rectangle_29 {
+		fill: rgba(38, 245, 245, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_29 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1209px;
+		top: 692px;
+	}
+
+	#Rectangle_30 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_30 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1322px;
+		top: 639px;
+	}
+
+	#Rectangle_31 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_31 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1151px;
+		top: 692px;
+	}
+
+	#Rectangle_32 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_32 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1322px;
+		top: 693px;
+	}
+
+	#Rectangle_33 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_33 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1267px;
+		top: 692px;
+	}
+
+	#Rectangle_34 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_34 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1151px;
+		top: 743px;
+	}
+
+	#Rectangle_35 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_35 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1209px;
+		top: 745px;
+	}
+
+	#Rectangle_36 {
+		fill: rgba(38, 245, 245, 1);
+	}
+
+	.Rectangle_36 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1267px;
+		top: 745px;
+	}
+
+	#Rectangle_37 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_37 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 40px;
+		left: 1324px;
+		top: 747px;
+	}
+
+	#Rectangle_38 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_38 {
+		position: absolute;
+		overflow: visible;
+		width: 149px;
+		height: 35px;
+		left: 1152px;
+		top: 511px;
+	}
+
+	#NO_OF_STUDENT {
+		left: 1172px;
+		top: 522px;
+		position: absolute;
+		overflow: visible;
+		width: 86px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(172, 172, 172, 1);
+	}
+
+	#Rectangle_39 {
+		fill: rgba(242, 227, 227, 1);
+	}
+
+	.Rectangle_39 {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 32px;
+		left: 1314px;
+		top: 454px;
+	}
+
+	#Icon_awesome-undo-alt {
+		fill: rgba(133, 121, 121, 1);
+	}
+
+	.Icon_awesome-undo-alt {
+		overflow: visible;
+		position: absolute;
+		width: 20.814px;
+		height: 21.587px;
+		left: 1330.482px;
+		top: 459.955px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_40 {
+		fill: rgba(59, 91, 197, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_40 {
+		position: absolute;
+		overflow: visible;
+		width: 114px;
+		height: 36px;
+		left: 1156px;
+		top: 810px;
+	}
+
+	#SUBMIT {
+		left: 1187px;
+		top: 819px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255, 245, 245, 1);
+	}
+
+	#Icon_awesome-user_cf {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cf {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1220.599px;
+		top: 643.802px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cg {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cg {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1220.599px;
+		top: 696.879px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_ch {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_ch {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1220.599px;
+		top: 748.973px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_ci {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_ci {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1162.711px;
+		top: 747.007px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cj {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cj {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1162.711px;
+		top: 696.879px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_ck {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_ck {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1162.711px;
+		top: 645.768px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cl {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cl {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1220.599px;
+		top: 593.674px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cm {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cm {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1277.471px;
+		top: 593.674px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cn {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cn {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1278.486px;
+		top: 643.802px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_co {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_co {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1278.486px;
+		top: 696.879px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cp {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cp {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1278.486px;
+		top: 748.973px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cq {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cq {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1336.374px;
+		top: 752.905px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cr {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cr {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1334.343px;
+		top: 697.862px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_cs {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_cs {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1334.343px;
+		top: 643.802px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user_ct {
+		fill: rgba(96, 84, 84, 1);
+	}
+
+	.Icon_awesome-user_ct {
+		overflow: visible;
+		position: absolute;
+		width: 24.374px;
+		height: 27.12px;
+		left: 1332.312px;
+		top: 589.742px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_41 {
+		fill: rgba(75, 150, 236, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_41 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 42px;
+		left: 1147px;
+		top: 448px;
+	}
+
+	#Rectangle_42 {
+		fill: rgba(255, 0, 0, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_42 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 42px;
+		left: 1215px;
+		top: 448px;
+	}
+
+	#P {
+		left: 1165px;
+		top: 453px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#A {
+		left: 1231px;
+		top: 452px;
+		position: absolute;
+		overflow: visible;
+		width: 17px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Path_5 {
+		fill: rgba(191, 229, 255, 1);
+	}
+
+	.Path_5 {
+		overflow: visible;
+		position: absolute;
+		width: 224.937px;
+		height: 166.624px;
+		left: 1521.104px;
+		top: 479.827px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Line_8 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Line_8 {
+		overflow: visible;
+		position: absolute;
+		width: 213px;
+		height: 1px;
+		left: 1521.5px;
+		top: 644.692px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Line_9 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Line_9 {
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 191px;
+		left: 1515.807px;
+		top: 456.096px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#ID0 {
+		opacity: 0.2;
+		left: 1514px;
+		top: 652px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID1 {
+		opacity: 0.2;
+		left: 1542px;
+		top: 652px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID2 {
+		opacity: 0.3;
+		left: 1571px;
+		top: 652px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID3 {
+		left: 1602px;
+		top: 652px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID4 {
+		opacity: 0.5;
+		left: 1638px;
+		top: 652px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID5 {
+		left: 1669px;
+		top: 652px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID6 {
+		left: 1733px;
+		top: 409px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#ID7 {
+		left: 1771px;
+		top: 409px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#This_user_can_take_attendance_ {
+		left: 1111px;
+		top: 2127px;
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 91px;
+		text-align: left;
+		font-family: Segoe UI Historic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(164, 148, 148, 1);
+	}
+
+	#super_user_can_access_to_set_n {
+		left: 1111px;
+		top: 2010px;
+		position: absolute;
+		overflow: visible;
+		width: 407px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#This_user_can_take_attendance__db {
+		left: 1144px;
+		top: 1373px;
+		position: absolute;
+		overflow: visible;
+		width: 373px;
+		height: 91px;
+		text-align: left;
+		font-family: Segoe UI Historic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(164, 148, 148, 1);
+	}
+
+	#super_user_can_access_to_set_n_dc {
+		left: 1144px;
+		top: 1277px;
+		position: absolute;
+		overflow: visible;
+		width: 356px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#This_user_can_take_attendance__df {
+		left: 1102px;
+		top: 2931px;
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 91px;
+		text-align: left;
+		font-family: Segoe UI Historic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(164, 148, 148, 1);
+	}
+
+	#super_user_can_access_to_set_n_dg {
+		left: 1102px;
+		top: 2814px;
+		position: absolute;
+		overflow: visible;
+		width: 407px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#This_user_can_take_attendance__df {
+		left: 1102px;
+		top: 2931px;
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 91px;
+		text-align: left;
+		font-family: Segoe UI Historic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(164, 148, 148, 1);
+	}
+
+	#super_user_can_access_to_set_n_dg {
+		left: 1102px;
+		top: 2814px;
+		position: absolute;
+		overflow: visible;
+		width: 407px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#Rectangle_76 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_76 {
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		height: 84px;
+		left: 1524px;
+		top: 351px;
+	}
+
+	#Rectangle_77 {
+		fill: rgba(62, 229, 255, 1);
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_77 {
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		height: 58px;
+		left: 1537px;
+		top: 365px;
+	}
+
+	#Icon_awesome-user-alt_dj {
+		fill: rgba(252, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-alt_dj {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		left: 1548.26px;
+		top: 371.793px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#name__Laxmikant_varkal_roll_nu_dk {
+		left: 1620px;
+		top: 369px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(77, 73, 73, 1);
+	}
+
+	#Icon_awesome-chart-pie {
+		fill: rgba(255, 194, 194, 1);
+	}
+
+	.Icon_awesome-chart-pie {
+		overflow: visible;
+		position: absolute;
+		width: 143px;
+		height: 135px;
+		left: 1565px;
+		top: 704px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_36 {
+		fill: rgba(48, 55, 255, 0.859);
+	}
+
+	.Path_36 {
+		overflow: visible;
+		position: absolute;
+		width: 1449.657px;
+		height: 168.977px;
+		left: 395.89px;
+		top: 1681px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_37 {
+		fill: rgba(48, 55, 255, 0.859);
+	}
+
+	.Path_37 {
+		overflow: visible;
+		position: absolute;
+		width: 1449.657px;
+		height: 168.977px;
+		left: 395.89px;
+		top: 2414px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_38 {
+		fill: rgba(48, 55, 255, 0.859);
+	}
+
+	.Path_38 {
+		overflow: visible;
+		position: absolute;
+		width: 1465.442px;
+		height: 182.031px;
+		left: 329.104px;
+		top: 3218px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#SUPER_USER__d {
+		left: 913px;
+		top: 1711px;
+		position: absolute;
+		overflow: visible;
+		width: 435px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 69px;
+		color: rgba(255, 255, 255, 0.2);
+	}
+
+	#NORMAL_USER_ {
+		left: 914px;
+		top: 2460px;
+		position: absolute;
+		overflow: visible;
+		width: 434px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 57px;
+		color: rgba(255, 255, 255, 0.251);
+	}
+
+	#STUDENT_ {
+		left: 939px;
+		top: 3261px;
+		position: absolute;
+		overflow: visible;
+		width: 305px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 62px;
+		color: rgba(255, 255, 255, 0.412);
+	}
+
+	#STUDENT {
+		left: 513px;
+		top: 818px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Consolas;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 78px;
+		color: rgba(20, 20, 20, 0.071);
+	}
+
+	#ID3-8-2021 {
+		left: 247px;
+		top: 1101px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(143, 128, 128, 1);
+	}
+
+	#Icon_awesome-user-tie {
+		fill: rgba(251, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-tie {
+		overflow: visible;
+		position: absolute;
+		width: 142.969px;
+		height: 164.452px;
+		left: 253px;
+		top: 1287.11px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#SUPER_USER__dv {
+		left: 234px;
+		top: 1485px;
+		position: absolute;
+		overflow: visible;
+		width: 190px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Icon_awesome-user-circle {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-circle {
+		overflow: visible;
+		position: absolute;
+		width: 180.813px;
+		height: 184.365px;
+		left: 215.155px;
+		top: 2033.708px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#NORMAL_USER__dx {
+		left: 201px;
+		top: 2248px;
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Icon_awesome-user-alt_dy {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-alt_dy {
+		overflow: visible;
+		position: absolute;
+		width: 149px;
+		height: 161.157px;
+		left: 209.708px;
+		top: 2841.578px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#STUDENT__dz {
+		left: 220px;
+		top: 3022px;
+		position: absolute;
+		overflow: visible;
+		width: 148px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#akshata {
+		filter: blur(2px);
+		transform: matrix(1, 0, 0, 1, 1814.9999, 496) rotate(268deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(148, 137, 137, 1);
+	}
+
+	#NORMAL_USER_d {
+		opacity: 0.41;
+		left: 123px;
+		top: 686px;
+		position: absolute;
+		overflow: visible;
+		width: 320px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.349);
+	}
+
+	#Icon_awesome-arrow-alt-circle- {
+		fill: rgba(0, 255, 220, 1);
+	}
+
+	.Icon_awesome-arrow-alt-circle- {
+		overflow: visible;
+		position: absolute;
+		width: 34.875px;
+		height: 34.875px;
+		transform: matrix(1, 0, 0, 1, 1783.4973, 1009.3042) rotate(-1deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Icon_awesome-arrow-alt-circle-_d {
+		filter: blur(16px);
+		fill: rgba(71, 236, 255, 1);
+	}
+
+	.Icon_awesome-arrow-alt-circle-_d {
+		overflow: visible;
+		position: absolute;
+		width: 34.875px;
+		height: 34.875px;
+		transform: matrix(1, 0, 0, 1, 1783.4975, 1009.3042) rotate(-1deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Dark_mode {
+		left: 1693px;
+		top: 1016px;
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(198, 199, 216, 1);
+	}
+
+	#Rectangle_99 {
+		opacity: 0.14;
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Rectangle_99 {
+		position: absolute;
+		overflow: visible;
+		width: 178px;
+		height: 58px;
+		left: 1663px;
+		top: 998px;
+	}
+
+	#Path_54 {
+		fill: transparent;
+		stroke: rgba(112, 112, 112, 1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_54 {
+		filter: drop-shadow(4px 3px 6px rgba(43, 15, 15, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 303px;
+		height: 586px;
+		left: 1485px;
+		top: 316px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user-alt_d {
+		fill: rgba(24, 236, 243, 1);
+	}
+
+	.Icon_awesome-user-alt_d {
+		overflow: visible;
+		position: absolute;
+		width: 23.441px;
+		height: 24.162px;
+		left: 764.159px;
+		top: 824.214px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_metro-home_d {
+		fill: rgba(128, 119, 119, 1);
+	}
+
+	.Icon_metro-home_d {
+		overflow: visible;
+		position: absolute;
+		width: 23.788px;
+		height: 24.187px;
+		left: 860.508px;
+		top: 824.214px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#SUPER_USER__d {
+		left: 913px;
+		top: 1711px;
+		position: absolute;
+		overflow: visible;
+		width: 435px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 69px;
+		color: rgba(255, 255, 255, 0.2);
+	}
+
+	#Icon_awesome-whatsapp {
+		fill: rgba(188, 160, 160, 1);
+	}
+
+	.Icon_awesome-whatsapp {
+		overflow: visible;
+		position: absolute;
+		width: 44.13px;
+		height: 48.445px;
+		left: 1604.505px;
+		top: 4231.25px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-instagram {
+		fill: rgba(188, 160, 160, 1);
+	}
+
+	.Icon_awesome-instagram {
+		overflow: visible;
+		position: absolute;
+		width: 50.233px;
+		height: 48.445px;
+		left: 1669.194px;
+		top: 4233.25px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_feather-github {
+		fill: transparent;
+		stroke: rgba(188, 160, 160, 1);
+		stroke-width: 5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Icon_feather-github {
+		overflow: visible;
+		position: absolute;
+		width: 53.229px;
+		height: 52.57px;
+		left: 1740.269px;
+		top: 4234.177px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_feather-twitter {
+		fill: transparent;
+		stroke: rgba(188, 160, 160, 1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Icon_feather-twitter {
+		overflow: visible;
+		position: absolute;
+		width: 59.463px;
+		height: 48.123px;
+		left: 1808.537px;
+		top: 4236px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#recently_updated_in_date_3-4-2 {
+		left: 29px;
+		top: 4274px;
+		position: absolute;
+		overflow: visible;
+		width: 667px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(133, 133, 133, 1);
+	}
+
+	#Rectangle_203 {
+		fill: rgba(0, 220, 255, 1);
+	}
+
+	.Rectangle_203 {
+		width: 81px;
+		height: 76px;
+		position: absolute;
+		overflow: visible;
+		transform: matrix(1, 0, 0, 1, 263.5074, 3581.285) rotate(1deg);
+		transform-origin: center;
+	}
+
+	#Icon_awesome-user-edit {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-edit {
+		overflow: visible;
+		position: absolute;
+		width: 48.62px;
+		height: 39.79px;
+		left: 283.979px;
+		top: 3599.007px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#ATTENDANCE_eh {
+		left: 359px;
+		top: 3605px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#and_much_more_ei {
+		left: 362px;
+		top: 3635px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255, 252, 252, 1);
+	}
+
+	#Rectangle_204 {
+		opacity: 0.19;
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Rectangle_204 {
+		position: absolute;
+		overflow: visible;
+		width: 335px;
+		height: 58px;
+		left: 225px;
+		top: 3835px;
+	}
+
+	#Rectangle_205 {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Rectangle_205 {
+		position: absolute;
+		overflow: visible;
+		width: 335px;
+		height: 58px;
+		left: 225px;
+		top: 3747px;
+	}
+
+	#Sign-in {
+		left: 359px;
+		top: 3770px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(96, 96, 96, 0.878);
+	}
+
+	#Login {
+		left: 364px;
+		top: 3848px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(236, 236, 255, 1);
+	}
+
+	#Line_17 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 1);
+		stroke-width: 5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Line_17 {
+		overflow: visible;
+		position: absolute;
+		width: 7px;
+		height: 410.024px;
+		left: 619.5px;
+		top: 3575.5px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#super_user_can_access_to_set_n_eo {
+		left: 1108px;
+		top: 2223px;
+		position: absolute;
+		overflow: visible;
+		width: 407px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#super_user_can_access_to_set_n_ep {
+		left: 1102px;
+		top: 3048px;
+		position: absolute;
+		overflow: visible;
+		width: 407px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#super_user_can_access_to_set_n_eq {
+		left: 1144px;
+		top: 1490px;
+		position: absolute;
+		overflow: visible;
+		width: 356px;
+		height: 91px;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(172, 160, 160, 1);
+	}
+
+	#NORMAL_USER_er {
+		opacity: 0.38;
+		left: 507px;
+		top: 1126px;
+		position: absolute;
+		overflow: visible;
+		width: 336px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.349);
+	}
+
+	#NORMAL_USER_es {
+		opacity: 0.38;
+		left: 104px;
+		top: 1725px;
+		position: absolute;
+		overflow: visible;
+		width: 320px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.349);
+	}
+
+	#Path_65 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_65 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 79.9196, 4004.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_67 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_67 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 78.9196, 4127.8975) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_68 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_68 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, -36.0804, 3939.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_69 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_69 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 79.9196, 3876.3594) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_73 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_73 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, -41.0804, 4067.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_66 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_66 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 199.8707, 4067.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_70 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_70 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 202.8707, 3939.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_92 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_92 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1779.9196, 3510.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_93 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_93 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1775.9196, 3633.8975) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_94 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_94 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1665.9196, 3447.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_95 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_95 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1774.9196, 3377.3594) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_96 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_96 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1655.9196, 3573.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_97 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_97 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1900.8707, 3573.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_98 {
+		fill: transparent;
+		stroke: rgba(255, 255, 255, 0.341);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Path_98 {
+		overflow: visible;
+		position: absolute;
+		width: 119.468px;
+		height: 129.19px;
+		transform: matrix(1, 0, 0, 1, 1900.8707, 3447.5731) rotate(34deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Path_23 {
+		fill: rgba(0, 76, 255, 1);
+	}
+
+	.Path_23 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 868.018px;
+		top: 3725.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_26 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_26 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1173.536px;
+		top: 3869.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_24 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_24 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1069.694px;
+		top: 3719.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_25 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_25 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1266px;
+		top: 3718.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_27 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_27 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1358px;
+		top: 3581.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_22 {
+		fill: rgba(0, 76, 255, 1);
+	}
+
+	.Path_22 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 968.854px;
+		top: 3575.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-calendar-alt {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-calendar-alt {
+		overflow: visible;
+		position: absolute;
+		width: 65.272px;
+		height: 65px;
+		left: 1325.15px;
+		top: 3765.5px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_metro-database {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_metro-database {
+		overflow: visible;
+		position: absolute;
+		width: 67.769px;
+		height: 65px;
+		left: 1231.677px;
+		top: 3917.076px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_material-timelapse {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_material-timelapse {
+		overflow: visible;
+		position: absolute;
+		width: 70px;
+		height: 65.67px;
+		left: 1025.894px;
+		top: 3628px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_material-notifications-ac {
+		fill: rgba(255, 253, 251, 1);
+	}
+
+	.Icon_material-notifications-ac {
+		overflow: visible;
+		position: absolute;
+		width: 70px;
+		height: 65.67px;
+		left: 1126.744px;
+		top: 3772px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-sticky-note {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-sticky-note {
+		overflow: visible;
+		position: absolute;
+		width: 58.202px;
+		height: 65.67px;
+		left: 929.049px;
+		top: 3775.921px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_35 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_35 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1465px;
+		top: 3718.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_45 {
+		opacity: 0.61;
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_45 {
+		filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1161.53px;
+		top: 3581.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_46 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_46 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 1373px;
+		top: 3863.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_47 {
+		opacity: 0.4;
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_47 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 968.859px;
+		top: 3869.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_21 {
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_21 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 758.177px;
+		top: 3572.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-user-edit_fn {
+		filter: blur(0px);
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-edit_fn {
+		overflow: visible;
+		position: absolute;
+		width: 84px;
+		height: 65.614px;
+		left: 808.688px;
+		top: 3620.5px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_48 {
+		opacity: 0.4;
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_48 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 758.182px;
+		top: 3860.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Path_49 {
+		opacity: 0.4;
+		fill: rgba(0, 76, 255, 0.729);
+	}
+
+	.Path_49 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.98));
+		overflow: visible;
+		position: absolute;
+		width: 202px;
+		height: 189.259px;
+		left: 666.341px;
+		top: 3716.619px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-chart-bar {
+		fill: rgba(241, 255, 232, 1);
+	}
+
+	.Icon_awesome-chart-bar {
+		overflow: visible;
+		position: absolute;
+		width: 75.316px;
+		height: 53.5px;
+		left: 1529px;
+		top: 3775.042px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-users {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-users {
+		overflow: visible;
+		position: absolute;
+		width: 91.854px;
+		height: 66.25px;
+		left: 1403.8px;
+		top: 3633.955px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Rectangle_211 {
+		opacity: 0.05;
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Rectangle_211 {
+		position: absolute;
+		overflow: visible;
+		width: 231px;
+		height: 72px;
+		left: 1665px;
+		top: 4102px;
+	}
+
+	#Icon_awesome-arrow-alt-circle-_ft {
+		filter: blur(16px);
+		fill: rgba(71, 236, 255, 1);
+	}
+
+	.Icon_awesome-arrow-alt-circle-_ft {
+		overflow: visible;
+		position: absolute;
+		width: 34.875px;
+		height: 34.875px;
+		transform: matrix(1, 0, 0, 1, 1839.4975, 4114.3043) rotate(-1deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+
+	#Dark_mode_fu {
+		left: 1692px;
+		top: 4126px;
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Icon_awesome-arrow-alt-circle-_fv {
+		fill: rgba(29, 216, 255, 1);
+	}
+
+	.Icon_awesome-arrow-alt-circle-_fv {
+		overflow: visible;
+		position: absolute;
+		width: 34.875px;
+		height: 34.875px;
+		left: 1836.537px;
+		top: 4120.486px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#NORMAL_USER_fw {
+		opacity: 0.31;
+		left: 2px;
+		top: -26px;
+		position: absolute;
+		overflow: visible;
+		width: 320px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.38);
+	}
+
+	#Rectangle_212 {
+		opacity: 0.41;
+		fill: rgba(133, 174, 255, 1);
+	}
+
+	.Rectangle_212 {
+		width: 81px;
+		height: 76px;
+		position: absolute;
+		overflow: visible;
+		transform: matrix(1, 0, 0, 1, 123.5074, 48.2848) rotate(1deg);
+		transform-origin: center;
+	}
+
+	#Icon_awesome-user-edit_fy {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Icon_awesome-user-edit_fy {
+		overflow: visible;
+		position: absolute;
+		width: 48.62px;
+		height: 39.79px;
+		left: 142.979px;
+		top: 66.006px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#ATTENDANCE_fz {
+		left: 218px;
+		top: 72px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#and_much_more_f {
+		opacity: 0.71;
+		left: 218px;
+		top: 97px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255, 252, 252, 1);
+	}
+
+	#Rectangle_213 {
+		fill: rgba(253, 0, 0, 0);
+	}
+
+	.Rectangle_213 {
+		position: absolute;
+		overflow: visible;
+		width: 220px;
+		height: 30px;
+		left: 500px;
+		top: 47px;
+		border-radius: 50px;
+		outline: none;
+		padding: 30px;
+
+	}
+
+	#Icon_awesome-search_f {
+		fill: rgb(255, 250, 250);
+	}
+
+	.Icon_awesome-search_f {
+		overflow: visible;
+		position: absolute;
+		width: 25.705px;
+		height: 23.92px;
+		left: 461.188px;
+		top: 70.08px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#search_student_f {
+		opacity: 0.65;
+		left: 517px;
+		top: 67px;
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgb(112, 112, 112);
+	}
+
+	#sign-out {
+		left: 1736.5px;
+		top: 68.5px;
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(42, 39, 39, 0.631);
+	}
+
+	#Rectangle_221 {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Rectangle_221 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 856px;
+		top: 66px;
+	}
+
+	#Clender {
+		left: 879.5px;
+		top: 75.5px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(7, 6, 6, 1);
+	}
+
+	#Rectangle_222 {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	.Rectangle_222 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 985px;
+		top: 67px;
+	}
+
+	#students {
+		left: 1007px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(7, 6, 6, 1);
+	}
+
+	#Rectangle_223 {
+		fill: rgba(23, 93, 255, 1);
+	}
+
+	.Rectangle_223 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 1108px;
+		top: 66px;
+	}
+
+	#Rectangle_224 {
+		fill: rgba(23, 93, 255, 1);
+	}
+
+	.Rectangle_224 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 1231px;
+		top: 66px;
+	}
+
+	#charts {
+		left: 1135px;
+		top: 74px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Rectangle_225 {
+		fill: rgba(23, 93, 255, 1);
+	}
+
+	.Rectangle_225 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 1359px;
+		top: 66px;
+	}
+
+	#Rectangle_226 {
+		fill: rgba(23, 93, 255, 1);
+	}
+
+	.Rectangle_226 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 1487px;
+		top: 66px;
+	}
+
+	#Rectangle_227 {
+		fill: rgba(23, 93, 255, 1);
+	}
+
+	.Rectangle_227 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 37px;
+		left: 1608px;
+		top: 66px;
+	}
+
+	#attendance {
+		left: 1245px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#notes {
+		left: 1386px;
+		top: 74px;
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Notice {
+		left: 1512px;
+		top: 73px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#timetable {
+		left: 1622px;
+		top: 75px;
+		position: absolute;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Microsoft New Tai Lue;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#Icon_awesome-arrow-alt-circle-_gj {
+		filter: blur(5px);
+		fill: rgb(255, 255, 255);
+	}
+
+	.Icon_awesome-arrow-alt-circle-_gj {
+		overflow: visible;
+		position: absolute;
+		width: 57.806px;
+		height: 55.062px;
+		left: 1829px;
+		top: 68px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#Icon_awesome-arrow-alt-circle-_gk {
+		fill: rgba(48, 55, 255, 1);
+	}
+
+	.Icon_awesome-arrow-alt-circle-_gk {
+		overflow: visible;
+		position: absolute;
+		width: 34.875px;
+		height: 34.875px;
+		left: 1825px;
+		top: 65px;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+
+	#NORMAL_USER_gl {
+		opacity: 0.38;
+		left: 569px;
+		top: 1788px;
+		position: absolute;
+		overflow: visible;
+		width: 336px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.349);
+	}
+
+	#NORMAL_USER_gm {
+		opacity: 0.38;
+		left: 228px;
+		top: 2470px;
+		position: absolute;
+		overflow: visible;
+		width: 336px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.349);
+	}
+
+	#NORMAL_USER_gn {
+		opacity: 0.38;
+		left: -101px;
+		top: 2288px;
+		position: absolute;
+		overflow: visible;
+		width: 336px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Malgun Gothic;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 76px;
+		color: rgba(255, 255, 255, 0.349);
+	}
+
+	#Rectangle_206 {
+		fill: rgba(255, 255, 255, 1);
+		stroke: rgba(206, 201, 201, 1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.Rectangle_206 {
+		position: absolute;
+		overflow: visible;
+		width: 840px;
+		height: 449px;
+		left: 1886px;
+		top: 1841px;
+	}
+</style>
+
+<body>
+
+
+	<div>
+
+		<div id="whitetheam__1">
+			<svg class="Path_50" viewBox="0 0 1920 750.74">
+				<path id="Path_50"
+					d="M 0 0 L 1920 0 L 1920 750.7398071289063 L 816.4345703125 750.7398071289063 L 0 750.7398071289063 L 0 0 Z">
+				</path>
+			</svg>
+			<svg class="Polygon_2" viewBox="0 0 1311 659">
+				<path id="Polygon_2" d="M 655.4999389648438 0 L 1311 658.9999389648438 L 0 658.9999389648438 Z">
+				</path>
+			</svg>
+			<svg class="Polygon_5" viewBox="0 0 1390 704">
+				<path id="Polygon_5" d="M 694.9999389648438 0 L 1390 703.9999389648438 L 0 703.9999389648438 Z">
+				</path>
+			</svg>
+			<svg class="Polygon_4" viewBox="0 0 1403 698">
+				<path id="Polygon_4" d="M 701.4999389648438 0 L 1403 697.9999389648438 L 0 697.9999389648438 Z">
+				</path>
+			</svg>
+			<svg class="Polygon_3" viewBox="0 0 1403 701">
+				<path id="Polygon_3" d="M 701.4999389648438 0 L 1403 700.9999389648438 L 0 700.9999389648438 Z">
+				</path>
+			</svg>
+			<svg class="Path_117" viewBox="0 -62.174 1645.63 849.174">
+				<path id="Path_117"
+					d="M 849.1743774414063 -62.17440795898438 L 1645.63037109375 734.2815551757813 L 0 787 L 849.1743774414063 -62.17440795898438 Z">
+				</path>
+			</svg>
+			<div id="SUPER_USER">
+				<span>SUPER</span><br><span style="font-style:normal;font-weight:bold;">USER</span>
+			</div>
+			<div id="ATTENDANCE">
+				<span>ATTENDANCE</span>
+			</div>
+			<div id="and_much_more">
+				<span>and much more</span>
+			</div>
+			<div id="ID001">
+				<span>(0.01)</span>
+			</div>
+			<div id="August__2021">
+				<span>August 2021</span>
+			</div>
+			<div id="Laxmikant_varkal_">
+				<span>Laxmikant varkal </span>
+			</div>
+			<svg class="Rectangle_6">
+				<rect id="Rectangle_6" rx="20" ry="20" x="0" y="0" width="285" height="568">
+				</rect>
+			</svg>
+			<svg class="Rectangle_7">
+				<rect id="Rectangle_7" rx="10" ry="10" x="0" y="0" width="235" height="46">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-search" viewBox="0 0 20.7 19.922">
+				<path id="Icon_awesome-search"
+					d="M 20.41879844665527 17.22384834289551 L 16.38760375976563 13.34488391876221 C 16.20565223693848 13.1698055267334 15.95901012420654 13.07253932952881 15.70023727416992 13.07253932952881 L 15.04117584228516 13.07253932952881 C 16.15713310241699 11.69914436340332 16.82023811340332 9.971701622009277 16.82023811340332 8.092524528503418 C 16.82023811340332 3.622182846069336 13.05590152740479 0 8.41011905670166 0 C 3.764336585998535 0 0 3.622182846069336 0 8.092524528503418 C 0 12.56286525726318 3.764337062835693 16.18504905700684 8.41011905670166 16.18504905700684 C 10.36304569244385 16.18504905700684 12.15828323364258 15.54698276519775 13.58557796478271 14.47316837310791 L 13.58557796478271 15.10734176635742 C 13.58557796478271 15.35634231567383 13.68665981292725 15.59367084503174 13.86861038208008 15.76875019073486 L 17.89980697631836 19.64771461486816 C 18.27988052368164 20.01343536376953 18.89446640014648 20.01343536376953 19.27049446105957 19.64771461486816 L 20.41475677490234 18.54666328430176 C 20.79483032226563 18.18094253540039 20.79483032226563 17.58956718444824 20.41879844665527 17.22384643554688 Z M 8.41011905670166 13.07253932952881 C 5.551487445831299 13.07253932952881 3.234661340713501 10.84709453582764 3.234661340713501 8.092524528503418 C 3.234661340713501 5.341843605041504 5.547444343566895 3.112509489059448 8.41011905670166 3.112509489059448 C 11.2687520980835 3.112509489059448 13.58557796478271 5.337953567504883 13.58557796478271 8.092524528503418 C 13.58557796478271 10.84320449829102 11.27279472351074 13.07253932952881 8.41011905670166 13.07253932952881 Z">
+				</path>
+			</svg>
+
+
+
+			<svg class="Rectangle_9">
+				<rect id="Rectangle_9" rx="10" ry="10" x="0" y="0" width="58" height="58">
+				</rect>
+			</svg>
+			<div id="name__Laxmikant_varkal_roll_nu">
+				<span>name : Laxmikant varkal<br />roll number : 34<br />batch : i2<br />status : student</span>
+			</div>
+			<svg class="Icon_awesome-user-alt" viewBox="0 0 36 36">
+				<path id="Icon_awesome-user-alt"
+					d="M 18 20.25 C 23.58984375 20.25 28.125 15.71484375 28.125 10.125 C 28.125 4.53515625 23.58984375 0 18 0 C 12.41015625 0 7.875 4.53515625 7.875 10.125 C 7.875 15.71484375 12.41015625 20.25 18 20.25 Z M 27 22.5 L 23.12578201293945 22.5 C 21.56484413146973 23.21718788146973 19.828125 23.625 18 23.625 C 16.171875 23.625 14.44218730926514 23.21718788146973 12.87421894073486 22.5 L 9 22.5 C 4.028906345367432 22.5 0 26.52890586853027 0 31.5 L 0 32.625 C 0 34.48828125 1.51171875 36 3.375 36 L 32.625 36 C 34.48828125 36 36 34.48828125 36 32.625 L 36 31.5 C 36 26.52890586853027 31.97109413146973 22.5 27 22.5 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_10">
+				<rect id="Rectangle_10" rx="10" ry="10" x="0" y="0" width="229" height="84">
+				</rect>
+			</svg>
+			<svg class="Rectangle_11">
+				<rect id="Rectangle_11" rx="10" ry="10" x="0" y="0" width="229" height="84">
+				</rect>
+			</svg>
+			<svg class="Rectangle_12">
+				<rect id="Rectangle_12" rx="10" ry="10" x="0" y="0" width="229" height="84">
+				</rect>
+			</svg>
+			<div id="name__Laxmikant_varkal_roll_nu_">
+				<span>name : Laxmikant varkal<br />roll number : 34<br />batch : i2<br />status : student</span>
+			</div>
+			<div id="name__Laxmikant_varkal_roll_nu_ba">
+				<span>name : Laxmikant varkal<br />roll number : 34<br />batch : i2<br />status : student</span>
+			</div>
+			<div id="name__Laxmikant_varkal_roll_nu_bb">
+				<span>name : Laxmikant varkal<br />roll number : 34<br />batch : i2<br />status : student</span>
+			</div>
+			<svg class="Rectangle_13">
+				<rect id="Rectangle_13" rx="10" ry="10" x="0" y="0" width="58" height="58">
+				</rect>
+			</svg>
+			<svg class="Rectangle_14">
+				<rect id="Rectangle_14" rx="10" ry="10" x="0" y="0" width="58" height="58">
+				</rect>
+			</svg>
+			<svg class="Rectangle_15">
+				<rect id="Rectangle_15" rx="10" ry="10" x="0" y="0" width="58" height="58">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-user-alt_bf" viewBox="0 0 36 36">
+				<path id="Icon_awesome-user-alt_bf"
+					d="M 18 20.25 C 23.58984375 20.25 28.125 15.71484375 28.125 10.125 C 28.125 4.53515625 23.58984375 0 18 0 C 12.41015625 0 7.875 4.53515625 7.875 10.125 C 7.875 15.71484375 12.41015625 20.25 18 20.25 Z M 27 22.5 L 23.12578201293945 22.5 C 21.56484413146973 23.21718788146973 19.828125 23.625 18 23.625 C 16.171875 23.625 14.44218730926514 23.21718788146973 12.87421894073486 22.5 L 9 22.5 C 4.028906345367432 22.5 0 26.52890586853027 0 31.5 L 0 32.625 C 0 34.48828125 1.51171875 36 3.375 36 L 32.625 36 C 34.48828125 36 36 34.48828125 36 32.625 L 36 31.5 C 36 26.52890586853027 31.97109413146973 22.5 27 22.5 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user-alt_bg" viewBox="0 0 36 36">
+				<path id="Icon_awesome-user-alt_bg"
+					d="M 18 20.25 C 23.58984375 20.25 28.125 15.71484375 28.125 10.125 C 28.125 4.53515625 23.58984375 0 18 0 C 12.41015625 0 7.875 4.53515625 7.875 10.125 C 7.875 15.71484375 12.41015625 20.25 18 20.25 Z M 27 22.5 L 23.12578201293945 22.5 C 21.56484413146973 23.21718788146973 19.828125 23.625 18 23.625 C 16.171875 23.625 14.44218730926514 23.21718788146973 12.87421894073486 22.5 L 9 22.5 C 4.028906345367432 22.5 0 26.52890586853027 0 31.5 L 0 32.625 C 0 34.48828125 1.51171875 36 3.375 36 L 32.625 36 C 34.48828125 36 36 34.48828125 36 32.625 L 36 31.5 C 36 26.52890586853027 31.97109413146973 22.5 27 22.5 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user-alt_bh" viewBox="0 0 36 36">
+				<path id="Icon_awesome-user-alt_bh"
+					d="M 18 20.25 C 23.58984375 20.25 28.125 15.71484375 28.125 10.125 C 28.125 4.53515625 23.58984375 0 18 0 C 12.41015625 0 7.875 4.53515625 7.875 10.125 C 7.875 15.71484375 12.41015625 20.25 18 20.25 Z M 27 22.5 L 23.12578201293945 22.5 C 21.56484413146973 23.21718788146973 19.828125 23.625 18 23.625 C 16.171875 23.625 14.44218730926514 23.21718788146973 12.87421894073486 22.5 L 9 22.5 C 4.028906345367432 22.5 0 26.52890586853027 0 31.5 L 0 32.625 C 0 34.48828125 1.51171875 36 3.375 36 L 32.625 36 C 34.48828125 36 36 34.48828125 36 32.625 L 36 31.5 C 36 26.52890586853027 31.97109413146973 22.5 27 22.5 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user-alt_d" viewBox="0 0 23.442 24.162">
+				<path id="Icon_awesome-user-alt_d"
+					d="M 11.72079467773438 13.59132385253906 C 15.36065006256104 13.59132385253906 18.31374168395996 10.54743385314941 18.31374168395996 6.795661926269531 C 18.31374168395996 3.043890237808228 15.36065006256104 0 11.72079467773438 0 C 8.080938339233398 0 5.127847671508789 3.043890237808228 5.127847671508789 6.795661926269531 C 5.127847671508789 10.54743385314941 8.080938339233398 13.59132385253906 11.72079467773438 13.59132385253906 Z M 17.58119201660156 15.10147094726563 L 15.05847454071045 15.10147094726563 C 14.0420618057251 15.58283138275146 12.91118812561035 15.85654449462891 11.72079467773438 15.85654449462891 C 10.5304012298584 15.85654449462891 9.404106140136719 15.58283138275146 8.383114814758301 15.10147094726563 L 5.860397338867188 15.10147094726563 C 2.623443603515625 15.10147094726563 0 17.80557823181152 0 21.14205932617188 L 0 21.89713287353516 C 0 23.1477222442627 0.9843636155128479 24.162353515625 2.197649002075195 24.162353515625 L 21.24394035339355 24.162353515625 C 22.45722389221191 24.162353515625 23.44158935546875 23.1477222442627 23.44158935546875 21.89713287353516 L 23.44158935546875 21.14205932617188 C 23.44158935546875 17.80557823181152 20.81814575195313 15.10147094726563 17.58119201660156 15.10147094726563 Z">
+				</path>
+			</svg>
+			<svg class="Icon_metro-home_d" viewBox="2.571 2.861 23.788 24.187">
+				<path id="Icon_metro-home_d"
+					d="M 26.358642578125 17.42691230773926 L 14.46467018127441 7.079971790313721 L 2.570700645446777 17.42696571350098 L 2.570700645446777 13.20832443237305 L 14.46467018127441 2.861382007598877 L 26.358642578125 13.20837688446045 L 26.358642578125 17.42691230773926 Z M 23.3851490020752 17.05086517333984 L 23.3851490020752 27.04826354980469 L 17.43816375732422 27.04826354980469 L 17.43816375732422 20.38333129882813 L 11.49117660522461 20.38333129882813 L 11.49117660522461 27.04826354980469 L 5.544192314147949 27.04826354980469 L 5.544192314147949 17.05086517333984 L 14.46467018127441 9.552818298339844 L 23.3851490020752 17.05086517333984 Z">
+				</path>
+			</svg>
+			<svg class="Icon_ionic-md-settings" viewBox="3.375 3.375 24.325 24.162">
+				<path id="Icon_ionic-md-settings"
+					d="M 24.77364158630371 16.66436386108398 C 24.83562088012695 16.30221939086914 24.83562088012695 15.87919998168945 24.83562088012695 15.4562406539917 C 24.83562088012695 15.03328227996826 24.77364158630371 14.67107582092285 24.77364158630371 14.24811840057373 L 27.3853931427002 12.25483131408691 C 27.63447952270508 12.07372856140137 27.69640350341797 11.77175617218018 27.50993728637695 11.46966743469238 L 25.02202987670898 7.301412105560303 C 24.89754295349121 7.059555053710938 24.52461242675781 6.939265251159668 24.27552223205566 7.059555053710938 L 21.16565322875977 8.267735481262207 C 20.54363250732422 7.784602642059326 19.79776954650879 7.361586093902588 19.05132102966309 7.059555053710938 L 18.61582374572754 3.858203887939453 C 18.55384254455566 3.616927862167358 18.30481338500977 3.375071048736572 17.99380302429199 3.375071048736572 L 13.01798820495605 3.375071048736572 C 12.70703601837158 3.375071048736572 12.45800590515137 3.616928100585938 12.39602470397949 3.858203887939453 L 11.89854907989502 7.059555053710938 C 11.15204238891602 7.361586093902588 10.46810054779053 7.784545421600342 9.783574104309082 8.267735481262207 L 6.673704147338867 7.059555053710938 C 6.362693786621094 6.939265727996826 6.051683902740479 7.059555053710938 5.927197456359863 7.301412105560303 L 3.439290523529053 11.46972560882568 C 3.315388917922974 11.7109432220459 3.377251863479614 12.07372856140137 3.56377649307251 12.25488948822021 L 6.238325119018555 14.24811840057373 C 6.238325119018555 14.67107772827148 6.176345348358154 15.03328227996826 6.176345348358154 15.4562406539917 C 6.176345348358154 15.87919998168945 6.238325119018555 16.24140548706055 6.238325119018555 16.66436386108398 L 3.626516580581665 18.65765190124512 C 3.377427816390991 18.83875274658203 3.315564870834351 19.14072608947754 3.501972198486328 19.44281578063965 L 5.989879608154297 23.61107063293457 C 6.114423751831055 23.85293006896973 6.487355709075928 23.97321701049805 6.736386299133301 23.85293006896973 L 9.846314430236816 22.64474678039551 C 10.46827697753906 23.12788009643555 11.21420001983643 23.5508975982666 11.96064853668213 23.85293006896973 L 12.4581241607666 27.05428314208984 C 12.5206298828125 27.3563117980957 12.76907634735107 27.53741455078125 13.08008575439453 27.53741455078125 L 18.0559024810791 27.53741455078125 C 18.36691284179688 27.53741455078125 18.61594009399414 27.29555511474609 18.67792129516602 27.05428314208984 L 19.17598342895508 23.85293006896973 C 19.92190551757813 23.55089950561523 20.60643196105957 23.1279411315918 21.29031562805176 22.64474868774414 L 24.40024566650391 23.85293006896973 C 24.71119689941406 23.97321891784668 25.02220726013184 23.85293006896973 25.14675140380859 23.6110725402832 L 27.63465690612793 19.44275856018066 C 27.7591438293457 19.20153999328613 27.6966381072998 18.83875465393066 27.5101146697998 18.65759468078613 L 24.77364158630371 16.66436386108398 Z M 15.50595378875732 19.68467140197754 C 13.08002662658691 19.68467140197754 11.15215873718262 17.8123722076416 11.15215873718262 15.4562406539917 C 11.15215873718262 13.10011005401611 13.08002662658691 11.22781085968018 15.50595378875732 11.22781085968018 C 17.9318790435791 11.22781085968018 19.85980606079102 13.10011005401611 19.85980606079102 15.4562406539917 C 19.85980606079102 17.8123722076416 17.93188095092773 19.68467140197754 15.50595378875732 19.68467140197754 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_16">
+				<rect id="Rectangle_16" rx="2.5" ry="2.5" x="0" y="0" width="39" height="5">
+				</rect>
+			</svg>
+			<svg class="Rectangle_17">
+				<rect id="Rectangle_17" rx="20" ry="20" x="0" y="0" width="285" height="568">
+				</rect>
+			</svg>
+			<div id="NORMAL_USER">
+				<span>NORMAL</span><br><span style="font-style:normal;font-weight:bold;">USER</span>
+			</div>
+			<svg class="Path_53" viewBox="0 0 285 568">
+				<path id="Path_53"
+					d="M 20 0 L 265 0 C 276.0456848144531 0 285 8.954304695129395 285 20 L 285 548 C 285 559.0457153320313 276.0456848144531 568 265 568 L 20 568 C 8.954304695129395 568 0 559.0457153320313 0 548 L 0 20 C 0 8.954304695129395 20 0 20 0 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_21">
+				<rect id="Rectangle_21" rx="10" ry="10" x="0" y="0" width="228" height="86">
+				</rect>
+			</svg>
+			<div id="ROLL_NO">
+				<span>ROLL NO.</span>
+			</div>
+			<div id="ID33">
+				<span>33</span>
+			</div>
+			<svg class="Rectangle_22">
+				<rect id="Rectangle_22" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-user" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_23">
+				<rect id="Rectangle_23" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_24">
+				<rect id="Rectangle_24" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_25">
+				<rect id="Rectangle_25" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_26">
+				<rect id="Rectangle_26" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_27">
+				<rect id="Rectangle_27" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_28">
+				<rect id="Rectangle_28" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_29">
+				<rect id="Rectangle_29" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_30">
+				<rect id="Rectangle_30" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_31">
+				<rect id="Rectangle_31" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_32">
+				<rect id="Rectangle_32" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_33">
+				<rect id="Rectangle_33" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_34">
+				<rect id="Rectangle_34" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_35">
+				<rect id="Rectangle_35" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_36">
+				<rect id="Rectangle_36" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_37">
+				<rect id="Rectangle_37" rx="10" ry="10" x="0" y="0" width="48" height="40">
+				</rect>
+			</svg>
+			<svg class="Rectangle_38">
+				<rect id="Rectangle_38" rx="10" ry="10" x="0" y="0" width="149" height="35">
+				</rect>
+			</svg>
+			<div id="NO_OF_STUDENT">
+				<span>NO. OF STUDENT</span>
+			</div>
+			<svg class="Rectangle_39">
+				<rect id="Rectangle_39" rx="10" ry="10" x="0" y="0" width="54" height="32">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-undo-alt" viewBox="0.563 0.562 20.814 21.587">
+				<path id="Icon_awesome-undo-alt"
+					d="M 10.95032978057861 0.5624887943267822 C 8.169456481933594 0.567668080329895 5.644560813903809 1.704229593276978 3.780462741851807 3.551871299743652 L 2.281782150268555 1.997488260269165 C 1.647295713424683 1.33941912651062 0.5625 1.805464386940002 0.5625 2.736074924468994 L 0.5625 8.570734024047852 C 0.5625 9.147632598876953 1.013396739959717 9.615288734436035 1.569621443748474 9.615288734436035 L 7.195191860198975 9.615288734436035 C 8.092453956604004 9.615288734436035 8.54179859161377 8.49017333984375 7.907352924346924 7.832104682922363 L 6.155381202697754 6.015016555786133 C 7.450539112091064 4.757243156433105 9.126431465148926 4.060525894165039 10.90689659118652 4.044596195220947 C 14.78423118591309 4.009864330291748 18.05254936218262 7.264302253723145 18.01902008056641 11.41923236846924 C 17.98721122741699 15.36072731018066 14.90625953674316 18.66808700561523 10.96942234039307 18.66808700561523 C 9.243593215942383 18.66808700561523 7.612475872039795 18.02925682067871 6.327012062072754 16.85944366455078 C 6.127979278564453 16.6783447265625 5.827395439147949 16.68935585021973 5.640154838562012 16.88351249694824 L 3.975802421569824 18.6097240447998 C 3.771356344223022 18.82176780700684 3.781470060348511 19.16747093200684 3.996028661727905 19.36846160888672 C 5.841411113739014 21.09724235534668 8.286870956420898 22.14993476867676 10.96942234039307 22.14993476867676 C 16.71697998046875 22.14993476867676 21.37630271911621 17.31743812561035 21.3763427734375 11.35629844665527 C 21.37638282775879 5.401950836181641 16.69129753112793 0.5518256425857544 10.95032978057861 0.5624887943267822 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_40">
+				<rect id="Rectangle_40" rx="10" ry="10" x="0" y="0" width="114" height="36">
+				</rect>
+			</svg>
+			<div id="SUBMIT">
+				<span>SUBMIT</span>
+			</div>
+			<svg class="Icon_awesome-user_cf" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cf"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cg" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cg"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_ch" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_ch"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_ci" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_ci"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cj" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cj"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_ck" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_ck"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cl" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cl"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cm" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cm"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cn" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cn"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_co" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_co"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cp" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cp"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cq" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cq"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cr" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cr"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_cs" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_cs"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user_ct" viewBox="0 0 24.374 27.12">
+				<path id="Icon_awesome-user_ct"
+					d="M 12.1868896484375 13.56015014648438 C 16.03337669372559 13.56015014648438 19.15082550048828 10.5250072479248 19.15082550048828 6.780075073242188 C 19.15082550048828 3.035142660140991 16.03337669372559 0 12.1868896484375 0 C 8.340402603149414 0 5.222952842712402 3.035143136978149 5.222952842712402 6.780075073242188 C 5.222952842712402 10.5250072479248 8.340402603149414 13.56015014648438 12.1868896484375 13.56015014648438 Z M 17.0616455078125 15.25516891479492 L 16.15306854248047 15.25516891479492 C 14.94526100158691 15.79545593261719 13.60143756866455 16.1026782989502 12.18688869476318 16.1026782989502 C 10.77234077453613 16.1026782989502 9.433958053588867 15.79545593261719 8.220709800720215 15.25516891479492 L 7.312133312225342 15.25516891479492 C 3.275226593017578 15.25516891479492 0 18.44392204284668 0 22.37424850463867 L 0 24.57777214050293 C 0 25.98146057128906 1.169723868370056 27.12030029296875 2.611476421356201 27.12030029296875 L 21.76230430603027 27.12030029296875 C 23.20405578613281 27.12030029296875 24.373779296875 25.98146057128906 24.373779296875 24.57777214050293 L 24.373779296875 22.37424850463867 C 24.373779296875 18.44392204284668 21.09855270385742 15.25516891479492 17.0616455078125 15.25516891479492 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_41">
+				<rect id="Rectangle_41" rx="10" ry="10" x="0" y="0" width="48" height="42">
+				</rect>
+			</svg>
+			<svg class="Rectangle_42">
+				<rect id="Rectangle_42" rx="10" ry="10" x="0" y="0" width="48" height="42">
+				</rect>
+			</svg>
+			<div id="P">
+				<span>P</span>
+			</div>
+			<div id="A">
+				<span>A</span>
+			</div>
+			<svg class="Path_5" viewBox="1558.105 229.588 224.937 166.624">
+				<path id="Path_5"
+					d="M 1558.104614257813 375.1524963378906 C 1564.57275390625 344.9678039550781 1567.986450195313 345.1474609375 1581.102416992188 340.6557006835938 C 1594.218383789063 336.1639404296875 1605.537719726563 355.0293579101563 1610.568481445313 357.1854248046875 C 1615.599243164063 359.3414916992188 1618.09814453125 367.7480773925781 1637.87841796875 357.1854248046875 C 1657.65869140625 346.6227722167969 1657.462524414063 368.864013671875 1675.968627929688 357.1854248046875 C 1694.474731445313 345.5068359375 1682.257080078125 318.7359008789063 1695.373046875 314.064453125 C 1708.489013671875 309.3930053710938 1724.120361328125 288.9105224609375 1724.120361328125 288.9105224609375 C 1724.120361328125 288.9105224609375 1732.385131835938 269.1467895507813 1740.650024414063 258.7258605957031 C 1748.914916992188 248.3049621582031 1783.041381835938 229.5880584716797 1783.041381835938 229.5880584716797 L 1783.041381835938 396.2119140625 L 1558.104614257813 396.2119140625 L 1558.104614257813 375.1524963378906 Z">
+				</path>
+			</svg>
+			<svg class="Line_8" viewBox="0 0 213 1">
+				<path id="Line_8" d="M 0 0 L 213 0">
+				</path>
+			</svg>
+			<svg class="Line_9" viewBox="0 0 1 191">
+				<path id="Line_9" d="M 0 0 L 0 191">
+				</path>
+			</svg>
+			<div id="ID0">
+				<span>0</span>
+			</div>
+			<div id="ID1">
+				<span>1</span>
+			</div>
+			<div id="ID2">
+				<span>2</span>
+			</div>
+			<div id="ID3">
+				<span>3</span>
+			</div>
+			<div id="ID4">
+				<span>4</span>
+			</div>
+			<div id="ID5">
+				<span>5</span>
+			</div>
+			<div id="ID6">
+				<span>6</span>
+			</div>
+			<div id="ID7">
+				<span>7</span>
+			</div>
+			<div id="This_user_can_take_attendance_">
+				<span>This user can take attendance ,add notifications and check the attendance of student </span>
+			</div>
+			<div id="super_user_can_access_to_set_n">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<div id="This_user_can_take_attendance__db">
+				<span>This user can take attendance ,add notifications and check the attendance of student </span>
+			</div>
+			<div id="super_user_can_access_to_set_n_dc">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<div id="This_user_can_take_attendance__df">
+				<span>This user can take attendance ,add notifications and check the attendance of student </span>
+			</div>
+			<div id="super_user_can_access_to_set_n_dg">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<div id="This_user_can_take_attendance__df">
+				<span>This user can take attendance ,add notifications and check the attendance of student </span>
+			</div>
+			<div id="super_user_can_access_to_set_n_dg">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<svg class="Rectangle_76">
+				<rect id="Rectangle_76" rx="10" ry="10" x="0" y="0" width="229" height="84">
+				</rect>
+			</svg>
+			<svg class="Rectangle_77">
+				<rect id="Rectangle_77" rx="10" ry="10" x="0" y="0" width="58" height="58">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-user-alt_dj" viewBox="0 0 36 36">
+				<path id="Icon_awesome-user-alt_dj"
+					d="M 18 20.25 C 23.58984375 20.25 28.125 15.71484375 28.125 10.125 C 28.125 4.53515625 23.58984375 0 18 0 C 12.41015625 0 7.875 4.53515625 7.875 10.125 C 7.875 15.71484375 12.41015625 20.25 18 20.25 Z M 27 22.5 L 23.12578201293945 22.5 C 21.56484413146973 23.21718788146973 19.828125 23.625 18 23.625 C 16.171875 23.625 14.44218730926514 23.21718788146973 12.87421894073486 22.5 L 9 22.5 C 4.028906345367432 22.5 0 26.52890586853027 0 31.5 L 0 32.625 C 0 34.48828125 1.51171875 36 3.375 36 L 32.625 36 C 34.48828125 36 36 34.48828125 36 32.625 L 36 31.5 C 36 26.52890586853027 31.97109413146973 22.5 27 22.5 Z">
+				</path>
+			</svg>
+			<div id="name__Laxmikant_varkal_roll_nu_dk">
+				<span>name : Laxmikant varkal<br />roll number : 34<br />batch : i2<br />status : student</span>
+			</div>
+			<svg class="Icon_awesome-chart-pie" viewBox="0 0 143 135">
+				<path id="Icon_awesome-chart-pie"
+					d="M 138.7390441894531 75.93757629394531 L 76.36331176757813 75.93757629394531 L 117.9041976928711 117.606086730957 C 119.4919204711914 119.1986846923828 122.1048126220703 119.327880859375 123.7372207641602 117.7853851318359 C 133.9101715087891 108.1718063354492 140.9076995849609 95.21219635009766 142.9606781005859 80.6441650390625 C 143.3129425048828 78.14981079101563 141.2494354248047 75.93757629394531 138.7390441894531 75.93757629394531 Z M 134.5778503417969 58.85145568847656 C 132.4118347167969 27.35287094116211 107.3185424804688 2.182483673095703 75.91643524169922 0.009804497472941875 C 73.51908874511719 -0.1563105583190918 71.50026702880859 1.871348023414612 71.50026702880859 4.28133487701416 L 71.50026702880859 63.28118515014648 L 130.3220520019531 63.28118515014648 C 132.7246398925781 63.28118515014648 134.7434692382813 61.25616073608398 134.5778656005859 58.85145568847656 Z M 58.88265228271484 75.93757629394531 L 58.88265228271484 13.37020206451416 C 58.88265228271484 10.8521089553833 56.67719268798828 8.782261848449707 54.19309997558594 9.135586738586426 C 22.86722946166992 13.57586765289307 -1.077330470085144 41.02704238891602 0.03722594678401947 73.92573547363281 C 1.183326363563538 107.7130126953125 30.18544769287109 135.4199523925781 63.885009765625 134.9954376220703 C 77.13351440429688 134.8293304443359 89.37522888183594 130.5472412109375 99.44040679931641 123.3858337402344 C 101.5170593261719 121.9092559814453 101.6537475585938 118.8427124023438 99.85310363769531 117.0365447998047 L 58.88265228271484 75.93757629394531 Z">
+				</path>
+			</svg>
+			<svg class="Path_36" viewBox="-210.11 0 1449.657 168.977">
+				<path id="Path_36"
+					d="M -28.9033203125 0 L 1239.54638671875 0 L 1089.74853515625 168.9765625 L -210.1103515625 168.9765625 L -28.9033203125 0 Z">
+				</path>
+			</svg>
+			<svg class="Path_37" viewBox="-210.11 0 1449.657 168.977">
+				<path id="Path_37"
+					d="M -28.9033203125 0 L 1239.54638671875 0 L 1089.74853515625 168.9765625 L -210.1103515625 168.9765625 L -28.9033203125 0 Z">
+				</path>
+			</svg>
+			<svg class="Path_38" viewBox="-225.896 0 1465.442 182.031">
+				<path id="Path_38"
+					d="M -34.32470703125 0 L 1239.54638671875 0 L 1090.11767578125 182.031494140625 L -225.89599609375 182.031494140625 L -34.32470703125 0 Z">
+				</path>
+			</svg>
+			<div id="SUPER_USER__d">
+				<span>SUPER USER </span>
+			</div>
+			<div id="NORMAL_USER_">
+				<span>NORMAL USER </span>
+			</div>
+			<div id="STUDENT_">
+				<span>STUDENT </span>
+			</div>
+			<div id="STUDENT">
+				<span>STUDENT</span>
+			</div>
+			<div id="ID3-8-2021">
+				<span>3-8-2021</span>
+			</div>
+			<svg class="Icon_awesome-user-tie" viewBox="0 0 142.969 164.452">
+				<path id="Icon_awesome-user-tie"
+					d="M 71.484619140625 82.225830078125 C 94.04695129394531 82.225830078125 112.3329696655273 63.82138061523438 112.3329696655273 41.1129150390625 C 112.3329696655273 18.40445137023926 94.04695129394531 0 71.484619140625 0 C 48.92228317260742 0 30.63626480102539 18.40445327758789 30.63626480102539 41.1129150390625 C 30.63626480102539 63.82138061523438 48.92228317260742 82.225830078125 71.484619140625 82.225830078125 Z M 102.0570526123047 92.69677734375 L 86.80274963378906 154.1734466552734 L 76.59066009521484 110.490966796875 L 86.80274963378906 92.50405883789063 L 56.16648483276367 92.50405883789063 L 66.37857055664063 110.490966796875 L 56.16648483276367 154.1734466552734 L 40.91217803955078 92.69677734375 C 18.15836906433105 93.78884124755859 0 112.5144882202148 0 135.6726379394531 L 0 149.0343170166016 C 0 157.5459747314453 6.861246585845947 164.45166015625 15.3181324005127 164.45166015625 L 127.6511001586914 164.45166015625 C 136.1079864501953 164.45166015625 142.96923828125 157.5459747314453 142.96923828125 149.0343170166016 L 142.96923828125 135.6726379394531 C 142.96923828125 112.5144958496094 124.8108596801758 93.78884124755859 102.0570526123047 92.69678497314453 Z">
+				</path>
+			</svg>
+			<div id="SUPER_USER__dv">
+				<span>SUPER USER </span>
+			</div>
+			<svg class="Icon_awesome-user-circle" viewBox="0 0.563 180.814 184.365">
+				<path id="Icon_awesome-user-circle"
+					d="M 90.4068603515625 0.5625 C 40.46435928344727 0.5625 0 41.82168579101563 0 92.74517822265625 C 0 143.6686706542969 40.46435928344727 184.9278564453125 90.4068603515625 184.9278564453125 C 140.3493804931641 184.9278564453125 180.813720703125 143.6686706542969 180.813720703125 92.74517822265625 C 180.813720703125 41.82168579101563 140.3493804931641 0.5625 90.4068603515625 0.5625 Z M 90.4068603515625 36.24611663818359 C 108.1236877441406 36.24611663818359 122.4867172241211 50.89126586914063 122.4867172241211 68.95610046386719 C 122.4867172241211 87.02092742919922 108.1236877441406 101.6660842895508 90.4068603515625 101.6660842895508 C 72.69004058837891 101.6660842895508 58.32701110839844 87.02092742919922 58.32701110839844 68.95610046386719 C 58.32701110839844 50.89127349853516 72.69003295898438 36.24611663818359 90.4068603515625 36.24611663818359 Z M 90.4068603515625 164.1124114990234 C 69.00814056396484 164.1124114990234 49.8331413269043 154.2250823974609 37.00119400024414 138.7621765136719 C 43.85461807250977 125.6038360595703 57.26983261108398 116.5342559814453 72.90876007080078 116.5342559814453 C 73.78366088867188 116.5342559814453 74.6585693359375 116.6829452514648 75.49702453613281 116.9431304931641 C 80.23609161376953 118.5042877197266 85.19389343261719 119.5078964233398 90.4068603515625 119.5078964233398 C 95.61984252929688 119.5078964233398 100.6140899658203 118.5042877197266 105.3167114257813 116.9431304931641 C 106.155158996582 116.6829376220703 107.0300674438477 116.5342559814453 107.9049682617188 116.5342559814453 C 123.5438995361328 116.5342559814453 136.9591064453125 125.6038513183594 143.8125305175781 138.7621765136719 C 130.9805755615234 154.2250823974609 111.8055877685547 164.1124114990234 90.4068603515625 164.1124114990234 Z">
+				</path>
+			</svg>
+			<div id="NORMAL_USER__dx">
+				<span>NORMAL USER </span>
+			</div>
+			<svg class="Icon_awesome-user-alt_dy" viewBox="0 0 149 161.157">
+				<path id="Icon_awesome-user-alt_dy"
+					d="M 74.5 90.65059661865234 C 97.6357421875 90.65059661865234 116.40625 70.34864044189453 116.40625 45.32529830932617 C 116.40625 20.30195808410645 97.6357421875 -7.73670421949646e-07 74.5 -7.73670421949646e-07 C 51.3642578125 -7.73670421949646e-07 32.59375 20.30195808410645 32.59375 45.32529830932617 C 32.59375 70.34864044189453 51.3642578125 90.65059661865234 74.5 90.65059661865234 Z M 111.75 100.7228851318359 L 95.71504211425781 100.7228851318359 C 89.25450134277344 103.9334335327148 82.06640625 105.759033203125 74.5 105.759033203125 C 66.93359375 105.759033203125 59.77460861206055 103.9334335327148 53.28496932983398 100.7228851318359 L 37.25 100.7228851318359 C 16.67519569396973 100.7228851318359 0 118.7585906982422 0 141.0120391845703 L 0 146.0481872558594 C 0 154.3892974853516 6.2568359375 161.1566162109375 13.96875 161.1566162109375 L 135.03125 161.1566162109375 C 142.7431640625 161.1566162109375 149 154.3892974853516 149 146.0481872558594 L 149 141.0120391845703 C 149 118.7585906982422 132.3248138427734 100.7228851318359 111.75 100.7228851318359 Z">
+				</path>
+			</svg>
+			<div id="STUDENT__dz">
+				<span>STUDENT </span>
+			</div>
+			<div id="akshata">
+				<span>akshata</span>
+			</div>
+			<div id="NORMAL_USER_d">
+				<span>NORMAL</span><br><span style="font-style:normal;font-weight:bold;">USER</span>
+			</div>
+			<svg class="Icon_awesome-arrow-alt-circle-" viewBox="0 0 34.875 34.875">
+				<path id="Icon_awesome-arrow-alt-circle-"
+					d="M 17.4375 6.049848122469115e-17 C 27.0703125 9.391901319155682e-17 34.875 7.8046875 34.875 17.4375 C 34.875 27.0703125 27.0703125 34.875 17.4375 34.875 C 7.8046875 34.875 -9.391901319155682e-17 27.0703125 -6.049848122469115e-17 17.4375 C -2.707794925782547e-17 7.8046875 7.8046875 2.707794925782547e-17 17.4375 6.049848122469115e-17 Z M 9.28125 20.53125 L 17.4375 20.53125 L 17.4375 25.51640701293945 C 17.4375 26.26875114440918 18.3515625 26.6484375 18.87890625 26.11406326293945 L 26.91562461853027 18.03515625 C 27.24609375 17.70468711853027 27.24609375 17.17734336853027 26.91562461853027 16.84687423706055 L 18.87890625 8.760936737060547 C 18.34453201293945 8.226561546325684 17.4375 8.60624885559082 17.4375 9.358592987060547 L 17.4375 14.34375 L 9.28125 14.34375 C 8.817187309265137 14.34375 8.4375 14.72343730926514 8.4375 15.1875 L 8.4375 19.6875 C 8.4375 20.15156173706055 8.817187309265137 20.53125 9.28125 20.53125 Z">
+				</path>
+			</svg>
+
+			<div id="Dark_mode">
+				<span>Dark mode</span>
+			</div>
+			<svg class="Rectangle_99">
+				<rect id="Rectangle_99" rx="10" ry="10" x="0" y="0" width="178" height="58">
+				</rect>
+			</svg>
+			<svg class="Path_54" viewBox="0 0 285 568">
+				<path id="Path_54"
+					d="M 20 0 L 265 0 C 276.0456848144531 0 285 8.954304695129395 285 20 L 285 548 C 285 559.0457153320313 276.0456848144531 568 265 568 L 20 568 C 8.954304695129395 568 0 559.0457153320313 0 548 L 0 20 C 0 8.954304695129395 20 0 20 0 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user-alt_d" viewBox="0 0 23.442 24.162">
+				<path id="Icon_awesome-user-alt_d"
+					d="M 11.72079467773438 13.59132385253906 C 15.36065006256104 13.59132385253906 18.31374168395996 10.54743385314941 18.31374168395996 6.795661926269531 C 18.31374168395996 3.043890237808228 15.36065006256104 0 11.72079467773438 0 C 8.080938339233398 0 5.127847671508789 3.043890237808228 5.127847671508789 6.795661926269531 C 5.127847671508789 10.54743385314941 8.080938339233398 13.59132385253906 11.72079467773438 13.59132385253906 Z M 17.58119201660156 15.10147094726563 L 15.05847454071045 15.10147094726563 C 14.0420618057251 15.58283138275146 12.91118812561035 15.85654449462891 11.72079467773438 15.85654449462891 C 10.5304012298584 15.85654449462891 9.404106140136719 15.58283138275146 8.383114814758301 15.10147094726563 L 5.860397338867188 15.10147094726563 C 2.623443603515625 15.10147094726563 0 17.80557823181152 0 21.14205932617188 L 0 21.89713287353516 C 0 23.1477222442627 0.9843636155128479 24.162353515625 2.197649002075195 24.162353515625 L 21.24394035339355 24.162353515625 C 22.45722389221191 24.162353515625 23.44158935546875 23.1477222442627 23.44158935546875 21.89713287353516 L 23.44158935546875 21.14205932617188 C 23.44158935546875 17.80557823181152 20.81814575195313 15.10147094726563 17.58119201660156 15.10147094726563 Z">
+				</path>
+			</svg>
+			<svg class="Icon_metro-home_d" viewBox="2.571 2.861 23.788 24.187">
+				<path id="Icon_metro-home_d"
+					d="M 26.358642578125 17.42691230773926 L 14.46467018127441 7.079971790313721 L 2.570700645446777 17.42696571350098 L 2.570700645446777 13.20832443237305 L 14.46467018127441 2.861382007598877 L 26.358642578125 13.20837688446045 L 26.358642578125 17.42691230773926 Z M 23.3851490020752 17.05086517333984 L 23.3851490020752 27.04826354980469 L 17.43816375732422 27.04826354980469 L 17.43816375732422 20.38333129882813 L 11.49117660522461 20.38333129882813 L 11.49117660522461 27.04826354980469 L 5.544192314147949 27.04826354980469 L 5.544192314147949 17.05086517333984 L 14.46467018127441 9.552818298339844 L 23.3851490020752 17.05086517333984 Z">
+				</path>
+			</svg>
+			<div id="SUPER_USER__d">
+				<span>SUPER USER </span>
+			</div>
+			<svg class="Icon_awesome-whatsapp" viewBox="0 2.25 44.13 48.445">
+				<path id="Icon_awesome-whatsapp"
+					d="M 37.52066802978516 9.289682388305664 C 33.39329147338867 4.747950553894043 27.89669990539551 2.249999761581421 22.05533599853516 2.249999761581421 C 9.998287200927734 2.249999761581421 0.1871597915887833 13.02038860321045 0.1871597915887833 26.25629043579102 C 0.1871597915887833 30.48442077636719 1.191913843154907 34.615234375 3.102916240692139 38.25942611694336 L 0 50.69512176513672 L 11.59407329559326 47.35370254516602 C 14.78564453125 49.26771545410156 18.38108825683594 50.27338790893555 22.04548645019531 50.27338790893555 L 22.05533790588379 50.27338790893555 C 34.10253143310547 50.27338790893555 44.13037109375 39.50299453735352 44.13037109375 26.26709938049316 C 44.13037109375 19.85461235046387 41.64803314208984 13.83141040802002 37.52066802978516 9.289680480957031 Z M 22.05533790588379 46.22908401489258 C 18.78495788574219 46.22908401489258 15.58353614807129 45.26666259765625 12.79583835601807 43.44997406005859 L 12.1358528137207 43.01742553710938 L 5.260182857513428 44.9963264465332 L 7.092381477355957 37.63223648071289 L 6.658957958221436 36.87528610229492 C 4.836609840393066 33.69607543945313 3.88110876083374 30.03025054931641 3.88110876083374 26.25629043579102 C 3.88110876083374 15.25881099700928 12.0373477935791 6.305115699768066 22.065185546875 6.305115699768066 C 26.92149543762207 6.305115699768066 31.48229217529297 8.381335258483887 34.91027450561523 12.15529823303223 C 38.33826065063477 15.9292573928833 40.4462776184082 20.93597412109375 40.43642425537109 26.26709938049316 C 40.43642425537109 37.275390625 32.07332229614258 46.22908401489258 22.05533599853516 46.22908401489258 Z M 32.02407073974609 31.28462600708008 C 31.4822940826416 30.98184967041016 28.79309844970703 29.53281784057617 28.29071998596191 29.33817291259766 C 27.78834342956543 29.13271141052246 27.42387390136719 29.03539085388184 27.05940628051758 29.64095306396484 C 26.6949348449707 30.24651336669922 25.65077972412109 31.58740997314453 25.32571220397949 31.99832534790039 C 25.01049613952637 32.39842987060547 24.68542861938477 32.45249938964844 24.14365005493164 32.14971923828125 C 20.93237686157227 30.3870964050293 18.82436180114746 29.00295066833496 16.70649909973145 25.01271629333496 C 16.14501762390137 23.95297813415527 17.26797866821289 24.0286750793457 18.31213569641113 21.73618125915527 C 18.48944473266602 21.3360767364502 18.40078926086426 20.99003982543945 18.26288032531738 20.68725967407227 C 18.12497711181641 20.38447761535645 17.03156661987305 17.43235206604004 16.57844161987305 16.2320384979248 C 16.13516616821289 15.06416416168213 15.68204402923584 15.22636890411377 15.34712600708008 15.20474147796631 C 15.03190803527832 15.18311214447021 14.66743755340576 15.18311214447021 14.30296897888184 15.18311214447021 C 13.93849849700928 15.18311214447021 13.34746742248535 15.33450412750244 12.84509086608887 15.92925357818604 C 12.34271430969238 16.53481864929199 10.93408870697021 17.98384666442871 10.93408870697021 20.93597221374512 C 10.93408870697021 23.88809776306152 12.89434337615967 26.74290084838867 13.16030883789063 27.14300346374512 C 13.43612289428711 27.54310989379883 17.01186561584473 33.59874725341797 22.49860954284668 36.204833984375 C 25.96599769592285 37.8485107421875 27.32537078857422 37.98908615112305 29.05905914306641 37.70793151855469 C 30.11306953430176 37.534912109375 32.29003524780273 36.25890350341797 32.74315643310547 34.85313034057617 C 33.19628524780273 33.44736099243164 33.19628524780273 32.24704360961914 33.05837631225586 31.99832534790039 C 32.93032073974609 31.72798538208008 32.56585311889648 31.57659149169922 32.02407073974609 31.28462600708008 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-instagram" viewBox="-0.005 2.238 50.233 48.445">
+				<path id="Icon_awesome-instagram"
+					d="M 25.11673355102539 14.03956317901611 C 17.98944473266602 14.03956317901611 12.24054908752441 19.58512115478516 12.24054908752441 26.4603099822998 C 12.24054908752441 33.33550643920898 17.98944473266602 38.88105773925781 25.11673355102539 38.88105773925781 C 32.2440185546875 38.88105773925781 37.992919921875 33.33550262451172 37.992919921875 26.4603099822998 C 37.992919921875 19.58512115478516 32.2440185546875 14.03956317901611 25.11673355102539 14.03956317901611 Z M 25.11673355102539 34.53541564941406 C 20.51089096069336 34.53541564941406 16.74553298950195 30.91404914855957 16.74553298950195 26.4603099822998 C 16.74553298950195 22.00656700134277 20.49968528747559 18.38519859313965 25.11673545837402 18.38519859313965 C 29.73378562927246 18.38519859313965 33.48793411254883 22.00656700134277 33.48793411254883 26.4603099822998 C 33.48793411254883 30.91404914855957 29.72257804870605 34.53541564941406 25.11673545837402 34.53541564941406 Z M 41.52294158935547 13.53149127960205 C 41.52294158935547 15.14218997955322 40.17816925048828 16.4285831451416 38.51961898803711 16.4285831451416 C 36.84986114501953 16.4285831451416 35.51629638671875 15.13137912750244 35.51629638671875 13.53149127960205 C 35.51629638671875 11.93160533905029 36.86106872558594 10.6343994140625 38.51961898803711 10.6343994140625 C 40.17816925048828 10.6343994140625 41.52294158935547 11.93160533905029 41.52294158935547 13.53149127960205 Z M 50.05103302001953 16.47182464599609 C 49.86052322387695 12.59101867675781 48.94159698486328 9.153424263000488 45.99430847167969 6.321191787719727 C 43.05822372436523 3.488958597183228 39.49457550048828 2.602534532546997 35.47146987915039 2.407953500747681 C 31.32509422302246 2.180943250656128 18.89716529846191 2.180943250656128 14.75078868865967 2.407953500747681 C 10.73888683319092 2.591724634170532 7.175242900848389 3.478148698806763 4.227954387664795 6.310379981994629 C 1.280664682388306 9.142611503601074 0.3729437291622162 12.58020877838135 0.1712282449007034 16.46101570129395 C -0.06410669535398483 20.46072959899902 -0.06410669535398483 32.44907760620117 0.1712282449007034 36.44879531860352 C 0.3617374897003174 40.3296012878418 1.280664205551147 43.7672004699707 4.227954387664795 46.59943008422852 C 7.175242900848389 49.43165588378906 10.72768115997314 50.31808471679688 14.75078868865967 50.51266098022461 C 18.89716529846191 50.73966598510742 31.32509422302246 50.73966598510742 35.47146987915039 50.51266098022461 C 39.49457931518555 50.32888793945313 43.05822372436523 49.44245910644531 45.99431228637695 46.59942245483398 C 48.93039321899414 43.76718902587891 49.84931945800781 40.32959747314453 50.0510368347168 36.44879150390625 C 50.28636932373047 32.44907760620117 50.28636932373047 20.47154235839844 50.0510368347168 16.47182083129883 Z M 44.69435882568359 40.74039077758789 C 43.82025909423828 42.85915374755859 42.12808609008789 44.49147415161133 39.92042541503906 45.34546661376953 C 36.61452865600586 46.6102409362793 28.77002906799316 46.31836700439453 25.11673355102539 46.31836700439453 C 21.46343803405762 46.31836700439453 13.60773372650146 46.59943008422852 10.31304264068604 45.34546661376953 C 8.116583824157715 44.50228500366211 6.424413681030273 42.86995697021484 5.539106369018555 40.74039077758789 C 4.227953910827637 37.55141830444336 4.530527114868164 29.98438835144043 4.530527114868164 26.4603099822998 C 4.530527114868164 22.93623733520508 4.239160537719727 15.35839176177979 5.539106369018555 12.18023777008057 C 6.413207054138184 10.06146717071533 8.105378150939941 8.42915153503418 10.31304264068604 7.575156211853027 C 13.61893844604492 6.310380935668945 21.46343803405762 6.602251052856445 25.11673355102539 6.602251052856445 C 28.77002906799316 6.602251052856445 36.625732421875 6.321191787719727 39.92042541503906 7.575156211853027 C 42.11688232421875 8.418341636657715 43.80905914306641 10.05065631866455 44.69435882568359 12.18023777008057 C 46.00551223754883 15.36920070648193 45.70293426513672 22.93623733520508 45.70293426513672 26.4603099822998 C 45.70293426513672 29.98438835144043 46.00551223754883 37.56223678588867 44.69435882568359 40.74039077758789 Z">
+				</path>
+			</svg>
+			<svg class="Icon_feather-github" viewBox="3 1.46 47.731 47.519">
+				<path id="Icon_feather-github"
+					d="M 20.13436889648438 42.19869232177734 C 7.895534038543701 45.58855819702148 7.895534038543701 36.54892730712891 3.000000476837158 35.41897201538086 M 37.26873397827148 48.97841644287109 L 37.26873397827148 40.23257446289063 C 37.4544792175293 38.05266189575195 36.61638259887695 35.90419769287109 34.96783447265625 34.33421325683594 C 42.65381622314453 33.54324722290039 50.73144912719727 30.85396003723145 50.73144912719727 18.51486587524414 C 50.73144912719727 15.36190605163574 49.41747665405273 12.327467918396 47.06148910522461 10.04185199737549 C 48.17726135253906 7.280702114105225 48.09775161743164 4.228793144226074 46.83949661254883 1.520359396934509 C 46.83949661254883 1.520360350608826 43.95113372802734 0.7293926477432251 37.26873397827148 4.865023612976074 C 31.65848159790039 3.461221218109131 25.74463081359863 3.461221218109131 20.13437080383301 4.865025520324707 C 13.45196342468262 0.7293926477432251 10.56360054016113 1.520360350608826 10.56360054016113 1.520360350608826 C 9.306365966796875 4.228517055511475 9.227470397949219 7.279749393463135 10.34330177307129 10.04021263122559 C 7.969275951385498 12.34238052368164 6.653347492218018 15.40402030944824 6.671648502349854 18.58266830444336 C 6.671650409698486 30.83136558532715 14.7492790222168 33.52065277099609 22.43527030944824 34.40201568603516 C 20.80657386779785 35.95584106445313 19.97005462646484 38.07561874389648 20.13436889648438 40.23257827758789 L 20.13436889648438 48.97841644287109">
+				</path>
+			</svg>
+			<svg class="Icon_feather-twitter" viewBox="1.5 4.485 55.463 44.11">
+				<path id="Icon_feather-twitter"
+					d="M 56.96338653564453 4.509835720062256 C 54.54918670654297 6.170297145843506 51.87615203857422 7.440282344818115 49.04725646972656 8.270885467529297 C 45.93716430664063 4.784012317657471 40.92531585693359 3.561241626739502 36.49760437011719 5.209070682525635 C 32.06988525390625 6.856896877288818 29.16815567016602 11.02480125427246 29.23169136047363 15.64548492431641 L 29.23169136047363 18.10368919372559 C 20.23317909240723 18.33119964599609 11.71541881561279 14.15082931518555 6.542132377624512 6.968041896820068 C 6.542125701904297 6.968037128448486 -3.542126655578613 29.09184837341309 19.14743995666504 38.92465209960938 C 13.95538139343262 42.36112976074219 7.770281791687012 44.08423233032227 1.500001430511475 43.84104537963867 C 24.18956756591797 56.13205718994141 51.92125701904297 43.84104537963867 51.92125701904297 15.57174301147461 C 51.91893768310547 14.88701820373535 51.85141754150391 14.20398139953613 51.71958160400391 13.53143310546875 C 54.29257965087891 11.05723571777344 56.10831451416016 7.933401584625244 56.96338653564453 4.509833812713623 Z">
+				</path>
+			</svg>
+			<div id="recently_updated_in_date_3-4-2">
+				<span>recently updated in date 3-4-2020 updated by Laxmikant varkal </span>
+			</div>
+			<svg class="Rectangle_203">
+				<rect id="Rectangle_203" rx="10" ry="10" x="0" y="0" width="81" height="76">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-user-edit" viewBox="0 0 48.62 39.789">
+				<path id="Icon_awesome-user-edit"
+					d="M 17.0177059173584 19.8942699432373 C 22.38891983032227 19.8942699432373 26.74210929870605 15.44137477874756 26.74210929870605 9.947134971618652 C 26.74210929870605 4.452897071838379 22.38891983032227 0 17.0177059173584 0 C 11.64649200439453 0 7.293302059173584 4.452897548675537 7.293302059173584 9.947134971618652 C 7.293302059173584 15.44137477874756 11.64649200439453 19.8942699432373 17.0177059173584 19.8942699432373 Z M 23.82478713989258 22.38105583190918 L 22.55605506896973 22.38105583190918 C 20.86948013305664 23.1737174987793 18.99297142028809 23.62444686889648 17.0177059173584 23.62444686889648 C 15.04243659973145 23.62444686889648 13.1735258102417 23.1737174987793 11.4793529510498 22.38105583190918 L 10.21062278747559 22.38105583190918 C 4.573508262634277 22.38105583190918 0 27.05931854248047 0 32.8255500793457 L 0 36.05836868286133 C 0 38.11773681640625 1.633395791053772 39.78853988647461 3.646651029586792 39.78853988647461 L 24.53132820129395 39.78853988647461 C 24.34899520874023 39.26009750366211 24.27302169799805 38.7005729675293 24.33380126953125 38.13327407836914 L 24.85040855407715 33.40061187744141 L 24.94157600402832 32.53801345825195 L 25.54175567626953 31.92408561706543 L 31.41438293457031 25.91694831848145 C 29.55307006835938 23.76432609558105 26.8560676574707 22.38105201721191 23.82479095458984 22.38105201721191 Z M 27.26631546020508 33.672607421875 L 26.74970436096191 38.41304016113281 C 26.6661376953125 39.2056999206543 27.31949424743652 39.87402725219727 28.0868091583252 39.78076934814453 L 32.71349716186523 39.25232696533203 L 43.19002532958984 28.53584289550781 L 37.74283981323242 22.96389198303223 L 27.26631546020508 33.67260360717773 Z M 48.09021377563477 20.89675712585449 L 45.21087646484375 17.95147132873535 C 44.50433731079102 17.22875022888184 43.34956359863281 17.22875022888184 42.64302444458008 17.95147132873535 L 39.77128601074219 20.88898468017578 L 39.45980072021484 21.20760154724121 L 44.91458511352539 26.77955436706543 L 48.09021377563477 23.53119277954102 C 48.7967529296875 22.80069923400879 48.7967529296875 21.62724876403809 48.09021377563477 20.89675521850586 Z">
+				</path>
+			</svg>
+			<div id="ATTENDANCE_eh">
+				<span>ATTENDANCE</span>
+			</div>
+			<div id="and_much_more_ei">
+				<span>and much more</span>
+			</div>
+			<svg class="Rectangle_204">
+				<rect id="Rectangle_204" rx="5" ry="5" x="0" y="0" width="335" height="58">
+				</rect>
+			</svg>
+			<svg class="Rectangle_205">
+				<rect id="Rectangle_205" rx="5" ry="5" x="0" y="0" width="335" height="58">
+				</rect>
+			</svg>
+			<div id="Sign-in">
+				<span>Sign-in</span>
+			</div>
+			<div id="Login">
+				<span>Login</span>
+			</div>
+			<svg class="Line_17" viewBox="0 0 2 410">
+				<path id="Line_17" d="M 0 0 L 2 410">
+				</path>
+			</svg>
+			<div id="super_user_can_access_to_set_n_eo">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<div id="super_user_can_access_to_set_n_ep">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<div id="super_user_can_access_to_set_n_eq">
+				<span>super user can access to set notification and manage attendance , manage database and more </span>
+			</div>
+			<div id="NORMAL_USER_er">
+				<span>NORMAL<br />USER</span>
+			</div>
+			<div id="NORMAL_USER_es">
+				<span>NORMAL</span><br><span style="font-style:normal;font-weight:bold;">USER</span>
+			</div>
+			<svg class="Path_65" viewBox="0 0 119.468 129.19">
+				<path id="Path_65"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_67" viewBox="0 0 119.468 129.19">
+				<path id="Path_67"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_68" viewBox="0 0 119.468 129.19">
+				<path id="Path_68"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_69" viewBox="0 0 119.468 129.19">
+				<path id="Path_69"
+					d="M 2.220847119350838e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847119350838e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_73" viewBox="0 0 119.468 129.19">
+				<path id="Path_73"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_66" viewBox="0 0 119.468 129.19">
+				<path id="Path_66"
+					d="M 2.220847119350838e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847119350838e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_70" viewBox="0 0 119.468 129.19">
+				<path id="Path_70"
+					d="M 2.220847119350838e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847119350838e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_92" viewBox="0 0 119.468 129.19">
+				<path id="Path_92"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_93" viewBox="0 0 119.468 129.19">
+				<path id="Path_93"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_94" viewBox="0 0 119.468 129.19">
+				<path id="Path_94"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_95" viewBox="0 0 119.468 129.19">
+				<path id="Path_95"
+					d="M 2.220847119350838e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847119350838e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_96" viewBox="0 0 119.468 129.19">
+				<path id="Path_96"
+					d="M 2.220847542867312e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847542867312e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_97" viewBox="0 0 119.468 129.19">
+				<path id="Path_97"
+					d="M 2.220847119350838e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847119350838e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_98" viewBox="0 0 119.468 129.19">
+				<path id="Path_98"
+					d="M 2.220847119350838e-15 40.00722122192383 L 59.31315231323242 -3.292540732787765e-15 L 112.9175109863281 30.61628341674805 L 119.4678192138672 89.18296813964844 L 60.15467071533203 129.190185546875 L 8.991500854492188 100.7152557373047 L 2.220847119350838e-15 40.00722122192383 Z">
+				</path>
+			</svg>
+			<svg class="Path_23" viewBox="0 -66.826 184 171.259">
+				<path id="Path_23"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_26" viewBox="0 -66.826 184 171.259">
+				<path id="Path_26"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_24" viewBox="0 -66.826 184 171.259">
+				<path id="Path_24"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_25" viewBox="0 -66.826 184 171.259">
+				<path id="Path_25"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_27" viewBox="0 -66.826 184 171.259">
+				<path id="Path_27"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_22" viewBox="0 -66.826 184 171.259">
+				<path id="Path_22"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-calendar-alt" viewBox="0 0 65.272 65">
+				<path id="Icon_awesome-calendar-alt"
+					d="M 0 58.90625381469727 C 0 62.2705078125 3.132495164871216 65 6.993477821350098 65 L 58.27898406982422 65 C 62.13996505737305 65 65.2724609375 62.2705078125 65.2724609375 58.90625381469727 L 65.2724609375 24.375 L 0 24.375 L 0 58.90625381469727 Z M 46.62318420410156 34.0234375 C 46.62318420410156 33.185546875 47.40995407104492 32.5 48.37155914306641 32.5 L 54.19945526123047 32.5 C 55.16106033325195 32.5 55.94782257080078 33.185546875 55.94782257080078 34.0234375 L 55.94782257080078 39.1015625 C 55.94782257080078 39.939453125 55.16106033325195 40.625 54.19945526123047 40.625 L 48.37155914306641 40.625 C 47.40995407104492 40.625 46.62318420410156 39.939453125 46.62318420410156 39.1015625 L 46.62318420410156 34.0234375 Z M 46.62318420410156 50.2734375 C 46.62318420410156 49.43555068969727 47.40995407104492 48.75 48.37155914306641 48.75 L 54.19945526123047 48.75 C 55.16106033325195 48.75 55.94782257080078 49.43555068969727 55.94782257080078 50.2734375 L 55.94782257080078 55.35156631469727 C 55.94782257080078 56.18944931030273 55.16106033325195 56.87500381469727 54.19945526123047 56.87500381469727 L 48.37155914306641 56.87500381469727 C 47.40995407104492 56.87500381469727 46.62318420410156 56.18944931030273 46.62318420410156 55.35156631469727 L 46.62318420410156 50.2734375 Z M 27.97391128540039 34.0234375 C 27.97391128540039 33.185546875 28.76067733764648 32.5 29.72228050231934 32.5 L 35.5501823425293 32.5 C 36.51178359985352 32.5 37.29854965209961 33.185546875 37.29854965209961 34.0234375 L 37.29854965209961 39.1015625 C 37.29854965209961 39.939453125 36.51178359985352 40.625 35.5501823425293 40.625 L 29.72228050231934 40.625 C 28.76067733764648 40.625 27.97391128540039 39.939453125 27.97391128540039 39.1015625 L 27.97391128540039 34.0234375 Z M 27.97391128540039 50.2734375 C 27.97391128540039 49.43555068969727 28.76067733764648 48.75 29.72228050231934 48.75 L 35.5501823425293 48.75 C 36.51178359985352 48.75 37.29854965209961 49.43555068969727 37.29854965209961 50.2734375 L 37.29854965209961 55.35156631469727 C 37.29854965209961 56.18944931030273 36.51178359985352 56.87500381469727 35.5501823425293 56.87500381469727 L 29.72228050231934 56.87500381469727 C 28.76067733764648 56.87500381469727 27.97391128540039 56.18944931030273 27.97391128540039 55.35156631469727 L 27.97391128540039 50.2734375 Z M 9.324637413024902 34.0234375 C 9.324637413024902 33.185546875 10.111403465271 32.5 11.07300758361816 32.5 L 16.90090370178223 32.5 C 17.86250877380371 32.5 18.6492748260498 33.185546875 18.6492748260498 34.0234375 L 18.6492748260498 39.1015625 C 18.6492748260498 39.939453125 17.86250877380371 40.625 16.90090370178223 40.625 L 11.07300758361816 40.625 C 10.111403465271 40.625 9.324637413024902 39.939453125 9.324637413024902 39.1015625 L 9.324637413024902 34.0234375 Z M 9.324637413024902 50.2734375 C 9.324637413024902 49.43555068969727 10.111403465271 48.75 11.07300758361816 48.75 L 16.90090370178223 48.75 C 17.86250877380371 48.75 18.6492748260498 49.43555068969727 18.6492748260498 50.2734375 L 18.6492748260498 55.35156631469727 C 18.6492748260498 56.18944931030273 17.86250877380371 56.87500381469727 16.90090370178223 56.87500381469727 L 11.07300758361816 56.87500381469727 C 10.111403465271 56.87500381469727 9.324637413024902 56.18944931030273 9.324637413024902 55.35156631469727 L 9.324637413024902 50.2734375 Z M 58.27898406982422 8.125 L 51.28550338745117 8.125 L 51.28550338745117 2.03125 C 51.28550338745117 0.9140625596046448 50.23648452758789 0 48.954345703125 0 L 44.29203033447266 0 C 43.00989151000977 0 41.96086502075195 0.9140625596046448 41.96086502075195 2.03125 L 41.96086502075195 8.125 L 23.31159210205078 8.125 L 23.31159210205078 2.03125 C 23.31159210205078 0.9140625596046448 22.26257133483887 0 20.98043251037598 0 L 16.318115234375 0 C 15.03597736358643 0 13.9869556427002 0.9140625596046448 13.9869556427002 2.03125 L 13.9869556427002 8.125 L 6.993477821350098 8.125 C 3.132495164871216 8.125 0 10.8544921875 0 14.21875095367432 L 0 20.3125 L 65.2724609375 20.3125 L 65.2724609375 14.21875095367432 C 65.2724609375 10.8544921875 62.13996505737305 8.125 58.27898406982422 8.125 Z">
+				</path>
+			</svg>
+			<svg class="Icon_metro-database" viewBox="2.571 1.928 67.769 65">
+				<path id="Icon_metro-database"
+					d="M 36.45539474487305 1.928033828735352 C 17.74138069152832 1.928033828735352 2.570700168609619 6.475114345550537 2.570700168609619 12.08428287506104 L 2.570700168609619 20.20928192138672 C 2.570700168609619 25.81845283508301 17.74137878417969 30.36553192138672 36.45539474487305 30.36553192138672 C 55.16941070556641 30.36553192138672 70.340087890625 25.81845283508301 70.340087890625 20.20928192138672 L 70.340087890625 12.08428287506104 C 70.340087890625 6.475114345550537 55.16940689086914 1.928033351898193 36.45539474487305 1.928033351898193 Z M 36.45539474487305 36.45928192138672 C 17.74138069152832 36.45928192138672 2.570700168609619 31.91220092773438 2.570700168609619 26.30303192138672 L 2.570700168609619 38.49053573608398 C 2.570700168609619 44.09970092773438 17.74137878417969 48.64678192138672 36.45539474487305 48.64678192138672 C 55.16941070556641 48.64678192138672 70.340087890625 44.09970092773438 70.340087890625 38.49053573608398 L 70.340087890625 26.30303192138672 C 70.340087890625 31.91220092773438 55.16940689086914 36.45928192138672 36.45539474487305 36.45928192138672 Z M 36.45539474487305 54.74053192138672 C 17.74138069152832 54.74053192138672 2.570700168609619 50.19345474243164 2.570700168609619 44.58428573608398 L 2.570700168609619 56.77178573608398 C 2.570700168609619 62.38095092773438 17.74137878417969 66.92803192138672 36.45539474487305 66.92803192138672 C 55.16941070556641 66.92803192138672 70.340087890625 62.38095092773438 70.340087890625 56.77178573608398 L 70.340087890625 44.58428192138672 C 70.340087890625 50.19345092773438 55.16940689086914 54.74053192138672 36.45539474487305 54.74053192138672 Z">
+				</path>
+			</svg>
+			<svg class="Icon_material-timelapse" viewBox="3 3 70 65.67">
+				<path id="Icon_material-timelapse"
+					d="M 52.83999633789063 21.91296005249023 C 48.74498748779297 18.07126235961914 43.38999176025391 16.13399887084961 37.99999237060547 16.13399887084961 L 37.99999237060547 35.83500289916992 L 23.15999794006348 49.75703811645508 C 31.3499927520752 57.44043350219727 44.64999008178711 57.44043350219727 52.87499618530273 49.75703811645508 C 61.06499099731445 42.07365036010742 61.06499099731445 29.59634971618652 52.83999633789063 21.91296005249023 Z M 37.99999237060547 2.999998807907104 C 18.67999839782715 2.999998807907104 3.000000476837158 17.71008110046387 3.000000476837158 35.83500289916992 C 3.000000476837158 53.95991516113281 18.67999649047852 68.66999816894531 37.99999237060547 68.66999816894531 C 57.31999206542969 68.66999816894531 73 53.95991897583008 73 35.83500289916992 C 73 17.71007919311523 57.31999206542969 2.999998807907104 37.99999237060547 2.999998807907104 Z M 37.99999237060547 62.10300064086914 C 22.52999877929688 62.10300064086914 9.999999046325684 50.34806823730469 9.999999046325684 35.83500289916992 C 9.999999046325684 21.32192611694336 22.52999877929688 9.566998481750488 37.99999237060547 9.566998481750488 C 53.46999740600586 9.566998481750488 65.99999237060547 21.32192993164063 65.99999237060547 35.83500289916992 C 65.99999237060547 50.34806823730469 53.46999740600586 62.10300064086914 37.99999237060547 62.10300064086914 Z">
+				</path>
+			</svg>
+			<svg class="Icon_material-notifications-ac" viewBox="3.045 3.75 70 65.67">
+				<path id="Icon_material-notifications-ac"
+					d="M 22.52843475341797 9.070953369140625 L 17.50837898254395 4.255153656005859 C 9.083108901977539 10.41802978515625 3.536474227905273 19.91492080688477 3.045000076293945 30.69153594970703 L 10.06605529785156 30.69153594970703 C 10.59263515472412 21.76715087890625 15.36695575714111 13.95410823822021 22.52843475341797 9.070953369140625 Z M 66.02385711669922 30.69153594970703 L 73.04491424560547 30.69153594970703 C 72.51833343505859 19.91492080688477 66.97170257568359 10.41803073883057 58.58154296875 4.255155086517334 L 53.59659576416016 9.070954322814941 C 60.68786239624023 13.95410823822021 65.49726867675781 21.76715278625488 66.02384948730469 30.69153594970703 Z M 59.10812759399414 32.37538146972656 C 59.10812759399414 22.03656959533691 53.35087203979492 13.38160037994385 43.31076431274414 11.0915699005127 L 43.31076431274414 8.80153751373291 C 43.31076431274414 6.006353855133057 40.95870971679688 3.749999523162842 38.04496765136719 3.749999523162842 C 35.13122940063477 3.749999523162842 32.77917861938477 6.006353855133057 32.77917861938477 8.80153751373291 L 32.77917861938477 11.0915699005127 C 22.70395851135254 13.38160037994385 16.98179817199707 22.00289154052734 16.98179817199707 32.37538146972656 L 16.98179817199707 49.21384048461914 L 9.96074104309082 55.94922637939453 L 9.96074104309082 59.31691741943359 L 66.12918090820313 59.31691741943359 L 66.12918090820313 55.94922637939453 L 59.10812759399414 49.21384048461914 L 59.10812759399414 32.37538146972656 Z M 38.04496765136719 69.41999816894531 C 38.53644180297852 69.41999816894531 38.99281311035156 69.38632202148438 39.44918060302734 69.28528594970703 C 41.73102569580078 68.81381225585938 43.59160232543945 67.33202362060547 44.50434112548828 65.31140899658203 C 44.85539245605469 64.50315856933594 45.03091812133789 63.62755966186523 45.03091812133789 62.68460845947266 L 30.98880767822266 62.68460845947266 C 31.02391624450684 66.38906860351563 34.14828872680664 69.41999816894531 38.04496765136719 69.41999816894531 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-sticky-note" viewBox="0 2.25 58.202 65.67">
+				<path id="Icon_awesome-sticky-note"
+					d="M 40.53364181518555 25.70357513427734 L 58.2021484375 25.70357513427734 L 58.2021484375 64.4019775390625 C 58.2021484375 66.35155487060547 56.81205368041992 67.92000579833984 55.08417892456055 67.92000579833984 L 3.117972612380981 67.92000579833984 C 1.390096068382263 67.92000579833984 0 66.35155487060547 0 64.4019775390625 L 0 5.768038749694824 C 0 3.818454265594482 1.390096068382263 2.250000238418579 3.117972612380981 2.250000238418579 L 37.41566848754883 2.250000238418579 L 37.41566848754883 22.1855411529541 C 37.41566848754883 24.12045669555664 38.81875610351563 25.70357513427734 40.53364181518555 25.70357513427734 Z M 57.29273986816406 17.64140892028809 L 44.5610237121582 3.276095867156982 C 43.97640228271484 2.61646294593811 43.18391799926758 2.250000238418579 42.35245895385742 2.250000238418579 L 41.57296752929688 2.250000238418579 L 41.57296752929688 21.01285743713379 L 58.2021484375 21.01285743713379 L 58.2021484375 20.11869430541992 C 58.2021484375 19.19520950317383 57.87736129760742 18.3010368347168 57.29273986816406 17.64140892028809 Z">
+				</path>
+			</svg>
+			<svg class="Path_35" viewBox="0 -66.826 184 171.259">
+				<path id="Path_35"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_45" viewBox="0 -66.826 184 171.259">
+				<path id="Path_45"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_46" viewBox="0 -66.826 184 171.259">
+				<path id="Path_46"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_47" viewBox="0 -66.826 184 171.259">
+				<path id="Path_47"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_21" viewBox="0 -66.826 184 171.259">
+				<path id="Path_21"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-user-edit_fn" viewBox="0 0 84 65.614">
+				<path id="Icon_awesome-user-edit_fn"
+					d="M 29.40114784240723 32.80646896362305 C 38.68088912963867 32.80646896362305 46.20180892944336 25.46346092224121 46.20180892944336 16.40323448181152 C 46.20180892944336 7.343009471893311 38.68088912963867 -4.658224384002096e-08 29.40114784240723 -4.658224384002096e-08 C 20.12141036987305 -4.658224384002096e-08 12.60049438476563 7.343011856079102 12.60049438476563 16.40323448181152 C 12.60049438476563 25.46346092224121 20.12141036987305 32.80646896362305 29.40114784240723 32.80646896362305 Z M 41.1616096496582 36.90727996826172 L 38.96964645385742 36.90727996826172 C 36.05578231811523 38.21441268920898 32.81378173828125 38.95768737792969 29.40114593505859 38.95768737792969 C 25.9885139465332 38.95768737792969 22.7596378326416 38.21441268920898 19.83264923095703 36.90727996826172 L 17.64068794250488 36.90727996826172 C 7.901558399200439 36.90727996826172 0 44.62192916870117 0 54.13068008422852 L 0 59.46172714233398 C 0 62.85770797729492 2.821985244750977 65.61293792724609 6.300247192382813 65.61293792724609 L 42.38228225708008 65.61293792724609 C 42.06727600097656 64.74152374267578 41.93601608276367 63.8188362121582 42.04102325439453 62.88333892822266 L 42.93355941772461 55.07898330688477 L 43.09106063842773 53.65652465820313 L 44.12798309326172 52.64413833618164 L 54.27400207519531 42.73811721801758 C 51.05824279785156 39.18835067749023 46.3986930847168 36.90727233886719 41.16161727905273 36.90727233886719 Z M 47.10746002197266 55.52751922607422 L 46.21493148803711 63.34468460083008 C 46.070556640625 64.65181732177734 47.19934463500977 65.75392150878906 48.52501678466797 65.60012054443359 L 56.51845932006836 64.72870635986328 L 74.61853790283203 47.0567741394043 L 65.20755767822266 37.868408203125 L 47.10746765136719 55.52751159667969 Z M 83.08449554443359 34.45961380004883 L 78.10993194580078 29.60271263122559 C 76.88925170898438 28.41091728210449 74.89418029785156 28.41091728210449 73.67350006103516 29.60271263122559 L 68.71205902099609 34.44679641723633 L 68.17391204833984 34.97220993041992 L 77.59803771972656 44.16058349609375 L 83.08449554443359 38.80390548706055 C 84.30516815185547 37.59928512573242 84.30516815185547 35.66422271728516 83.08449554443359 34.4596061706543 Z">
+				</path>
+			</svg>
+			<svg class="Path_48" viewBox="0 -66.826 184 171.259">
+				<path id="Path_48"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Path_49" viewBox="0 -66.826 184 171.259">
+				<path id="Path_49"
+					d="M 0 -19.87130355834961 L 91.822998046875 -66.825927734375 L 184 -19.87130355834961 L 184 56.24614334106445 L 91.822998046875 104.433349609375 L 0 56.24614334106445 L 0 -19.87130355834961 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-chart-bar" viewBox="0 4.5 75.317 53.5">
+				<path id="Icon_awesome-chart-bar"
+					d="M 48.9558219909668 40.16666412353516 L 54.60457229614258 40.16666412353516 C 55.5460319519043 40.16666412353516 56.48748779296875 39.27499771118164 56.48748779296875 38.38333511352539 L 56.48748779296875 19.65833473205566 C 56.48748779296875 18.76666641235352 55.54602813720703 17.875 54.60457229614258 17.875 L 48.9558219909668 17.875 C 48.01436233520508 17.875 47.07290649414063 18.76666641235352 47.07290649414063 19.65833473205566 L 47.07290649414063 38.38333129882813 C 47.07290649414063 39.27499771118164 48.01436614990234 40.16666412353516 48.9558219909668 40.16666412353516 Z M 63.07769775390625 40.16666412353516 L 68.7264404296875 40.16666412353516 C 69.66790008544922 40.16666412353516 70.60935974121094 39.27499771118164 70.60935974121094 38.38333511352539 L 70.60935974121094 6.283333778381348 C 70.60935974121094 5.391667366027832 69.66790008544922 4.499999523162842 68.7264404296875 4.499999523162842 L 63.07769012451172 4.499999523162842 C 62.13623046875 4.499999523162842 61.19477844238281 5.391666412353516 61.19477844238281 6.283333778381348 L 61.19477844238281 38.38333511352539 C 61.19477844238281 39.27500152587891 62.13623809814453 40.16666412353516 63.07769012451172 40.16666412353516 Z M 20.71207809448242 40.16666412353516 L 26.36082649230957 40.16666412353516 C 27.30228424072266 40.16666412353516 28.24374198913574 39.27499771118164 28.24374198913574 38.38333511352539 L 28.24374198913574 28.57500267028809 C 28.24374198913574 27.68333625793457 27.30228424072266 26.79166984558105 26.36082649230957 26.79166984558105 L 20.71207809448242 26.79166984558105 C 19.77062034606934 26.79166984558105 18.82916259765625 27.68334007263184 18.82916259765625 28.57500267028809 L 18.82916259765625 38.38333892822266 C 18.82916259765625 39.27500534057617 19.77062034606934 40.16666793823242 20.71207809448242 40.16666793823242 Z M 34.83395004272461 40.16666412353516 L 40.48270034790039 40.16666412353516 C 41.42416000366211 40.16666412353516 42.36561584472656 39.27499771118164 42.36561584472656 38.38333511352539 L 42.36561584472656 10.74166774749756 C 42.36561584472656 9.850001335144043 41.42415618896484 8.958333969116211 40.48270034790039 8.958333969116211 L 34.83395004272461 8.958333969116211 C 33.89249038696289 8.958333969116211 32.95103454589844 9.850000381469727 32.95103454589844 10.74166774749756 L 32.95103454589844 38.38333511352539 C 32.95103454589844 39.27500152587891 33.89249420166016 40.16666412353516 34.83395004272461 40.16666412353516 Z M 72.96300506591797 49.08333206176758 L 9.414581298828125 49.08333206176758 L 9.414581298828125 6.729166984558105 C 9.414581298828125 5.497552394866943 8.361325263977051 4.499999523162842 7.060935974121094 4.499999523162842 L 2.353645324707031 4.499999523162842 C 1.053256273269653 4.499999523162842 0 5.497552394866943 0 6.729166984558105 L 0 53.54166793823242 C 0 56.00350189208984 2.107983589172363 58 4.707290649414063 58 L 72.96300506591797 58 C 74.26339721679688 58 75.316650390625 57.00244903564453 75.316650390625 55.77083206176758 L 75.316650390625 51.3125 C 75.316650390625 50.08088302612305 74.26339721679688 49.08333206176758 72.96300506591797 49.08333206176758 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-users" viewBox="0 2.25 91.854 66.25">
+				<path id="Icon_awesome-users"
+					d="M 13.77813720703125 30.64285850524902 C 18.8444709777832 30.64285850524902 22.96356201171875 26.39871788024902 22.96356201171875 21.1785717010498 C 22.96356201171875 15.95842742919922 18.8444709777832 11.71428680419922 13.77813720703125 11.71428680419922 C 8.71180248260498 11.71428680419922 4.59271240234375 15.95842742919922 4.59271240234375 21.1785717010498 C 4.59271240234375 26.39871788024902 8.711800575256348 30.64285850524902 13.77813720703125 30.64285850524902 Z M 78.07610321044922 30.64285850524902 C 83.14244842529297 30.64285850524902 87.26153564453125 26.39871788024902 87.26153564453125 21.1785717010498 C 87.26153564453125 15.95842742919922 83.14244842529297 11.71428680419922 78.07610321044922 11.71428680419922 C 73.00977325439453 11.71428680419922 68.89068603515625 15.95842742919922 68.89068603515625 21.1785717010498 C 68.89068603515625 26.39871788024902 73.00977325439453 30.64285850524902 78.07610321044922 30.64285850524902 Z M 82.6688232421875 35.375 L 73.4833984375 35.375 C 70.95740509033203 35.375 68.67539978027344 36.42494583129883 67.01054382324219 38.12556076049805 C 72.79449462890625 41.39369583129883 76.89923095703125 47.29409027099609 77.7890625 54.3035774230957 L 87.26153564453125 54.3035774230957 C 89.8018798828125 54.3035774230957 91.854248046875 52.18889617919922 91.854248046875 49.57142639160156 L 91.854248046875 44.83928680419922 C 91.854248046875 39.61914443969727 87.73516082763672 35.375 82.6688232421875 35.375 Z M 45.9271240234375 35.375 C 54.81115341186523 35.375 62.00161361694336 27.96623992919922 62.00161361694336 18.81250190734863 C 62.00161361694336 9.658761978149414 54.81115341186523 2.249999761581421 45.9271240234375 2.249999761581421 C 37.04309463500977 2.249999761581421 29.85263061523438 9.658761978149414 29.85263061523438 18.81250190734863 C 29.85263061523438 27.96623992919922 37.04309463500977 35.375 45.9271240234375 35.375 Z M 56.94963073730469 40.10714340209961 L 55.75839614868164 40.10714340209961 C 52.77313613891602 41.58594131469727 49.45777130126953 42.47322082519531 45.9271240234375 42.47322082519531 C 42.39647674560547 42.47322082519531 39.09546279907227 41.58594131469727 36.09584808349609 40.10714340209961 L 34.90461730957031 40.10714340209961 C 25.77659797668457 40.10714340209961 18.370849609375 47.73772430419922 18.370849609375 57.14286041259766 L 18.370849609375 61.40178298950195 C 18.370849609375 65.32059478759766 21.45657920837402 68.5 25.25991630554199 68.5 L 66.59432983398438 68.5 C 70.39766693115234 68.5 73.4833984375 65.32059478759766 73.4833984375 61.40178298950195 L 73.4833984375 57.14286041259766 C 73.4833984375 47.73772430419922 66.07765197753906 40.10714340209961 56.94963073730469 40.10714340209961 Z M 24.84370231628418 38.12556076049805 C 23.17884635925293 36.42494583129883 20.89684104919434 35.375 18.370849609375 35.375 L 9.1854248046875 35.375 C 4.119088649749756 35.375 0 39.61914443969727 0 44.83928680419922 L 0 49.57142639160156 C 0 52.18889617919922 2.052368402481079 54.3035774230957 4.59271240234375 54.3035774230957 L 14.05082893371582 54.3035774230957 C 14.95501899719238 47.29409027099609 19.05975532531738 41.39369964599609 24.84370231628418 38.12556076049805 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_211">
+				<rect id="Rectangle_211" rx="10" ry="10" x="0" y="0" width="231" height="72">
+				</rect>
+			</svg>
+
+			<div id="Dark_mode_fu">
+				<span>Dark mode</span>
+			</div>
+			<svg class="Icon_awesome-arrow-alt-circle-_fv" viewBox="0.563 0.563 34.875 34.875">
+				<path id="Icon_awesome-arrow-alt-circle-_fv"
+					d="M 18 0.5625 C 27.6328125 0.5625 35.4375 8.3671875 35.4375 18 C 35.4375 27.6328125 27.6328125 35.4375 18 35.4375 C 8.3671875 35.4375 0.5625 27.6328125 0.5625 18 C 0.5625 8.3671875 8.3671875 0.5625 18 0.5625 Z M 9.84375 21.09375 L 18 21.09375 L 18 26.07890701293945 C 18 26.83125114440918 18.9140625 27.2109375 19.44140625 26.67656326293945 L 27.47812461853027 18.59765625 C 27.80859375 18.26718711853027 27.80859375 17.73984336853027 27.47812461853027 17.40937423706055 L 19.44140625 9.323436737060547 C 18.90703201293945 8.789061546325684 18 9.16874885559082 18 9.921092987060547 L 18 14.90625 L 9.84375 14.90625 C 9.379687309265137 14.90625 9 15.28593730926514 9 15.75 L 9 20.25 C 9 20.71406173706055 9.379687309265137 21.09375 9.84375 21.09375 Z">
+				</path>
+			</svg>
+			<div id="NORMAL_USER_fw">
+				<span>NORMAL</span><br><span style="font-style:normal;font-weight:bold;">USER</span>
+			</div>
+			<svg class="Rectangle_212">
+				<rect id="Rectangle_212" rx="10" ry="10" x="0" y="0" width="81" height="76">
+				</rect>
+			</svg>
+			<svg class="Icon_awesome-user-edit_fy" viewBox="0 0 48.62 39.789">
+				<path id="Icon_awesome-user-edit_fy"
+					d="M 17.0177059173584 19.8942699432373 C 22.38891983032227 19.8942699432373 26.74210929870605 15.44137477874756 26.74210929870605 9.947134971618652 C 26.74210929870605 4.452897071838379 22.38891983032227 0 17.0177059173584 0 C 11.64649200439453 0 7.293302059173584 4.452897548675537 7.293302059173584 9.947134971618652 C 7.293302059173584 15.44137477874756 11.64649200439453 19.8942699432373 17.0177059173584 19.8942699432373 Z M 23.82478713989258 22.38105583190918 L 22.55605506896973 22.38105583190918 C 20.86948013305664 23.1737174987793 18.99297142028809 23.62444686889648 17.0177059173584 23.62444686889648 C 15.04243659973145 23.62444686889648 13.1735258102417 23.1737174987793 11.4793529510498 22.38105583190918 L 10.21062278747559 22.38105583190918 C 4.573508262634277 22.38105583190918 0 27.05931854248047 0 32.8255500793457 L 0 36.05836868286133 C 0 38.11773681640625 1.633395791053772 39.78853988647461 3.646651029586792 39.78853988647461 L 24.53132820129395 39.78853988647461 C 24.34899520874023 39.26009750366211 24.27302169799805 38.7005729675293 24.33380126953125 38.13327407836914 L 24.85040855407715 33.40061187744141 L 24.94157600402832 32.53801345825195 L 25.54175567626953 31.92408561706543 L 31.41438293457031 25.91694831848145 C 29.55307006835938 23.76432609558105 26.8560676574707 22.38105201721191 23.82479095458984 22.38105201721191 Z M 27.26631546020508 33.672607421875 L 26.74970436096191 38.41304016113281 C 26.6661376953125 39.2056999206543 27.31949424743652 39.87402725219727 28.0868091583252 39.78076934814453 L 32.71349716186523 39.25232696533203 L 43.19002532958984 28.53584289550781 L 37.74283981323242 22.96389198303223 L 27.26631546020508 33.67260360717773 Z M 48.09021377563477 20.89675712585449 L 45.21087646484375 17.95147132873535 C 44.50433731079102 17.22875022888184 43.34956359863281 17.22875022888184 42.64302444458008 17.95147132873535 L 39.77128601074219 20.88898468017578 L 39.45980072021484 21.20760154724121 L 44.91458511352539 26.77955436706543 L 48.09021377563477 23.53119277954102 C 48.7967529296875 22.80069923400879 48.7967529296875 21.62724876403809 48.09021377563477 20.89675521850586 Z">
+				</path>
+			</svg>
+			<div id="ATTENDANCE_fz">
+				<span>ATTENDANCE</span>
+			</div>
+			<div id="and_much_more_f">
+				<span>and much more</span>
+			</div>
+			<input id="Rectangle_213" class="Rectangle_213" type="text" placeholder="serach student">
+
+			<svg class="Icon_awesome-search_f" viewBox="0 0 25.705 23.92">
+				<path id="Icon_awesome-search_f"
+					d="M 25.35549354553223 20.68059349060059 L 20.34966850280762 16.02313995361328 C 20.12372589111328 15.81292343139648 19.81745338439941 15.69613647460938 19.49611663818359 15.69613647460938 L 18.67771148681641 15.69613647460938 C 20.0634765625 14.0471076965332 20.88690185546875 11.97297477722168 20.88690185546875 9.716655731201172 C 20.88690185546875 4.349137783050537 16.21245384216309 0 10.44345092773438 0 C 4.674448013305664 0 0 4.349137783050537 0 9.716655731201172 C 0 15.08417320251465 4.674448490142822 19.43331146240234 10.44345092773438 19.43331146240234 C 12.86854076385498 19.43331146240234 15.09781646728516 18.66718864440918 16.87019157409668 17.37786483764648 L 16.87019157409668 18.13931465148926 C 16.87019157409668 18.43828773498535 16.99571228027344 18.72324752807617 17.22165298461914 18.93346405029297 L 22.22747993469238 23.59091758728027 C 22.6994457244873 24.03003692626953 23.46261978149414 24.03003692626953 23.92956161499023 23.59091758728027 L 25.3504753112793 22.26889038085938 C 25.82243919372559 21.82977104187012 25.82243919372559 21.11971092224121 25.35549354553223 20.68059158325195 Z M 10.44345092773438 15.69613647460938 C 6.89368200302124 15.69613647460938 4.016712188720703 13.02405548095703 4.016712188720703 9.716655731201172 C 4.016712188720703 6.413926601409912 6.88866138458252 3.737175464630127 10.44345092773438 3.737175464630127 C 13.99322128295898 3.737175464630127 16.87019157409668 6.409255504608154 16.87019157409668 9.716655731201172 C 16.87019157409668 13.01938438415527 13.99824142456055 15.69613647460938 10.44345092773438 15.69613647460938 Z">
+				</path>
+			</svg>
+
+			<div id="sign-out">
+				<span>sign-out</span>
+			</div>
+			<svg class="Rectangle_221">
+				<rect id="Rectangle_221" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<div id="Clender">
+				<a href="app.html">Clender</a>
+			</div>
+			<svg class="Rectangle_222">
+				<rect id="Rectangle_222" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<div id="students">
+				<a href="#">students</a>
+			</div>
+			<svg class="Rectangle_223">
+				<rect id="Rectangle_223" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<svg class="Rectangle_224">
+				<rect id="Rectangle_224" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<div id="charts">
+				<a href="#">charts</a>
+			</div>
+			<svg class="Rectangle_225">
+				<rect id="Rectangle_225" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<svg class="Rectangle_226">
+				<rect id="Rectangle_226" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<svg class="Rectangle_227">
+				<rect id="Rectangle_227" rx="18.5" ry="18.5" x="0" y="0" width="100" height="37">
+				</rect>
+			</svg>
+			<div id="attendance">
+				<a href="#">attendance</a>
+			</div>
+			<div id="notes">
+				<a href="#">notes</a>
+			</div>
+			<div id="Notice">
+				<a href="#">Notice</a>
+			</div>
+			<div id="timetable">
+				<a href="#">timetable</a>
+			</div>
+			<svg class="Icon_awesome-arrow-alt-circle-_gj" viewBox="0.563 0.563 27.806 25.062">
+				<path id="Icon_awesome-arrow-alt-circle-_gj"
+					d="M 14.465576171875 0.5625 C 22.14590454101563 0.5625 28.36865234375 6.171097755432129 28.36865234375 13.09342193603516 C 28.36865234375 20.0157470703125 22.14590454101563 25.62434387207031 14.465576171875 25.62434387207031 C 6.785247802734375 25.62434387207031 0.5625 20.0157470703125 0.5625 13.09342193603516 C 0.5625 6.171097755432129 6.785247802734375 0.5625 14.465576171875 0.5625 Z M 7.9625244140625 15.31664943695068 L 14.465576171875 15.31664943695068 L 14.465576171875 18.89908027648926 C 14.465576171875 19.43972969055176 15.19436645507813 19.71257781982422 15.61482238769531 19.32856750488281 L 22.0225715637207 13.52290916442871 C 22.28605651855469 13.28542709350586 22.28605651855469 12.90646839141846 22.0225715637207 12.66898632049561 L 15.61482238769531 6.858276844024658 C 15.18876171112061 6.474264621734619 14.465576171875 6.747115135192871 14.465576171875 7.287764072418213 L 14.465576171875 10.87019348144531 L 7.9625244140625 10.87019348144531 C 7.592523097991943 10.87019348144531 7.289794921875 11.14304447174072 7.289794921875 11.47652816772461 L 7.289794921875 14.71031475067139 C 7.289794921875 15.04379844665527 7.592523097991943 15.31664943695068 7.9625244140625 15.31664943695068 Z">
+				</path>
+			</svg>
+
+			<div id="NORMAL_USER_gl">
+				<span>NORMAL<br />USER</span>
+			</div>
+			<div id="NORMAL_USER_gm">
+				<span>NORMAL<br />USER</span>
+			</div>
+			<div id="NORMAL_USER_gn">
+				<span>NORMAL<br />USER</span>
+			</div>
+			<svg class="Rectangle_206">
+				<rect id="Rectangle_206" rx="10" ry="10" x="0" y="0" width="840" height="449">
+				</rect>
+			</svg>
+		</div>
+		<nav id="bt-menu" class="bt-menu">
+			<div style="background-color: aqua;"><a href="#" class="bt-menu-trigger">Menu</a></div>
+			<ul>
+				<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="30"
+							viewBox="0 0 60.434 52.5">
+							<path id="Icon_open-account-login" data-name="Icon open-account-login"
+								d="M22.663,0V7.5H52.88V45H22.663v7.5H60.434V0Zm7.554,15v7.5H0V30H30.217v7.5L45.326,26.25Z"
+								fill="#fff" />
+						</svg>
+
+
+					</a> <span>
+						<p style="font-size:12px;"><br>Login</p>
+					</span></li>
+				<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="30" viewBox="0 0 36 30">
+							<g id="Icon_feather-user-plus" data-name="Icon feather-user-plus"
+								transform="translate(0 -3)">
+								<path id="Path_84" data-name="Path 84" d="M24,31.5v-3a6,6,0,0,0-6-6H7.5a6,6,0,0,0-6,6v3"
+									fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="3" />
+								<path id="Path_85" data-name="Path 85"
+									d="M18.75,10.5a6,6,0,1,1-6-6A6,6,0,0,1,18.75,10.5Z" fill="none" stroke="#fff"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+								<path id="Path_86" data-name="Path 86" d="M30,12v9" fill="none" stroke="#fff"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+								<path id="Path_87" data-name="Path 87" d="M34.5,16.5h-9" fill="none" stroke="#fff"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+							</g>
+						</svg>
+
+					</a><span>
+						<p style="font-size:12px;"><br>Register</p>
+					</span></li>
+				<li><a href="#"><svg id="Icon_feather-settings" data-name="Icon feather-settings"
+							xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+							<path id="Path_88" data-name="Path 88"
+								d="M22.5,18A4.5,4.5,0,1,1,18,13.5,4.5,4.5,0,0,1,22.5,18Z" fill="none" stroke="#fff5f5"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+							<path id="Path_89" data-name="Path 89"
+								d="M29.1,22.5a2.475,2.475,0,0,0,.495,2.73l.09.09a3,3,0,1,1-4.245,4.245l-.09-.09a2.5,2.5,0,0,0-4.23,1.77V31.5a3,3,0,1,1-6,0v-.135A2.475,2.475,0,0,0,13.5,29.1a2.475,2.475,0,0,0-2.73.495l-.09.09A3,3,0,1,1,6.435,25.44l.09-.09a2.5,2.5,0,0,0-1.77-4.23H4.5a3,3,0,1,1,0-6h.135A2.475,2.475,0,0,0,6.9,13.5a2.475,2.475,0,0,0-.5-2.73l-.09-.09A3,3,0,1,1,10.56,6.435l.09.09a2.475,2.475,0,0,0,2.73.495h.12A2.475,2.475,0,0,0,15,4.755V4.5a3,3,0,0,1,6,0v.135a2.5,2.5,0,0,0,4.23,1.77l.09-.09a3,3,0,1,1,4.245,4.245l-.09.09a2.475,2.475,0,0,0-.5,2.73v.12A2.475,2.475,0,0,0,31.245,15H31.5a3,3,0,0,1,0,6h-.135A2.475,2.475,0,0,0,29.1,22.5Z"
+								fill="none" stroke="#fff5f5" stroke-linecap="round" stroke-linejoin="round"
+								stroke-width="3" />
+						</svg>
+					</a><span>
+						<p style="font-size:12px;"><br>Setting</p>
+					</span></li>
+				<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="31.5" viewBox="0 0 36 31.5">
+							<path id="Icon_open-account-logout" data-name="Icon open-account-logout"
+								d="M13.5,0V4.5h18V27h-18v4.5H36V0ZM9,9,0,15.75,9,22.5V18H27V13.5H9Z" fill="#fff" />
+						</svg>
+					</a><span>
+						<p style="font-size:12px;"><br>Lougout</p>
+					</span></li>
+				<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="42.085" height="31.5"
+							viewBox="0 0 42.085 31.5">
+							<path id="Icon_metro-profile" data-name="Icon metro-profile"
+								d="M43.577,12.212H40.635V7.805l-6.075-.093.032,4.5H16.335l.125-4.5-5.949.093v4.5L7.5,12.212a3,3,0,0,0-3.006,3v21a3,3,0,0,0,3.006,3H43.577a3,3,0,0,0,3.006-3v-21A3,3,0,0,0,43.577,12.212Zm-7.515-3h3.006v6H36.062ZM16.523,19.43c1.816,0,3.289,1.931,3.289,4.312s-1.473,4.312-3.289,4.312-3.289-1.931-3.289-4.312S14.707,19.43,16.523,19.43ZM12.014,9.212H15.02v6H12.014Zm-2,23.922s.356-2.853,1.166-3.391a11.546,11.546,0,0,1,3.141-.9s1.512,1.612,2.155,1.612,2.154-1.612,2.154-1.612a11.51,11.51,0,0,1,3.143.9c.951.633,1.189,3.391,1.189,3.391H10.01Zm30.561-1.422H27.044v-1.5H40.571Zm0-3H27.044v-1.5H40.571Zm0-3H27.044v-1.5H40.571Zm0-3H27.044v-1.5H40.571Z"
+								transform="translate(-4.499 -7.712)" fill="#fff" />
+						</svg>
+					</a><span>
+						<p style="font-size:12px;"><br>Profile</p>
+					</span></li>
+			</ul>
+		</nav>
+	</div><!-- /container -->
+</body>
+
+<script src="js/classie.js"></script>
+<script src="js/borderMenu.js"></script>
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin  -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+</body>
+
+</html>
